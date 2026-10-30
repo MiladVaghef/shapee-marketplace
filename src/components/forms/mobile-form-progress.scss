@@ -1,0 +1,36 @@
+.mobile-form-progress {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .mobile-form-progress {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    min-width: 0;
+    color: var(--color-primary);
+    font-size: 12px;
+    > span {
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+  }
+  .mobile-form-progress-track {
+    flex: 1;
+    height: 5px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: color-mix(
+      in srgb,
+      var(--color-primary) 14%,
+      var(--color-background)
+    );
+    > span {
+      display: block;
+      height: 100%;
+      border-radius: inherit;
+      background: var(--color-primary);
+      transition: width 180ms ease;
+    }
+  }
+}

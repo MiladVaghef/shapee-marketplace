@@ -1,0 +1,96 @@
+.form-notice {
+  position: fixed;
+  top: calc(16px + env(safe-area-inset-top));
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 1;
+  animation: form-notice-enter 240ms ease both;
+  z-index: 8000;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: min(440px, calc(100% - 32px));
+  padding: 12px 14px;
+  background: var(--color-background);
+  color: var(--color-text);
+  border: 1px solid #d950624d;
+  border-radius: 14px;
+  box-shadow: 0 6px 28px #0000001a;
+  font-size: 13px;
+  line-height: 1.8;
+  &[data-state="closing"] {
+    pointer-events: none;
+    animation: form-notice-exit 240ms ease both;
+  }
+  > .icon {
+    width: 22px;
+    height: 22px;
+    color: #cc4057;
+  }
+  > span {
+    flex: 1;
+    min-width: 0;
+  }
+  button {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: var(--color-background-alt);
+    color: var(--color-text-muted);
+    cursor: pointer;
+    .icon {
+      width: 14px;
+      height: 14px;
+    }
+  }
+}
+
+@keyframes form-notice-enter {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -8px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes form-notice-exit {
+  from {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-50%, -8px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .form-notice {
+    animation: none;
+  }
+}
+.step-flow,
+.verification-card {
+  input[aria-invalid="true"],
+  textarea[aria-invalid="true"],
+  select[aria-invalid="true"] {
+    border-color: #cc4057;
+    box-shadow: 0 0 0 2px #cc405712;
+  }
+}
+.verification-card .verification-error {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
