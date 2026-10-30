@@ -69,13 +69,6 @@ for (const screen of pages) {
   });
 }
 
-test("original HTML URLs redirect and unknown routes return 404", async ({
-  request,
-}) => {
-  const legacy = await request.get("/pages/account/dashboard.html", {
-    maxRedirects: 0,
-  });
-  expect(legacy.status()).toBe(308);
-  expect(legacy.headers().location).toBe("/account/dashboard");
+test("unknown routes return 404", async ({ request }) => {
   expect((await request.get("/does-not-exist")).status()).toBe(404);
 });

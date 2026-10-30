@@ -12,18 +12,5 @@ const nextConfig: NextConfig = {
       "if-function",
     ],
   },
-  async redirects() {
-    return [
-      { source: "/index.html", destination: "/", permanent: true },
-      { source: "/main.html", destination: "/preview", permanent: true },
-      {
-        source: "/components.html",
-        destination: "/components",
-        permanent: true,
-      },
-      { source: "/all-pages.html", destination: "/explore", permanent: true },
-      { source: "/pages/:path*.html", destination: "/:path*", permanent: true },
-    ];
-  },
 };
 export default nextConfig;
