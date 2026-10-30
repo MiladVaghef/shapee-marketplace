@@ -1,5 +1,7 @@
 node_modules/
 .next/
+.open-next/
+.wrangler/
 .next-verify/
 out/
 playwright-report/
@@ -7,6 +9,7 @@ test-results/
 *.tsbuildinfo
 .env*
 !.env.example
+.dev.vars*
 build.log
 browser-tests.log
 product-tests.log
