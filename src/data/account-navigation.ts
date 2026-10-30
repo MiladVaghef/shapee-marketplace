@@ -1,0 +1,92 @@
+export const accountNavigation = [
+  {
+    slug: "dashboard",
+    label: "داشبورد",
+    icon: "account-layout-dashboard",
+    group: "فعالیت‌ها",
+  },
+  {
+    slug: "chat",
+    label: "پیام‌ها",
+    icon: "account-messages-square",
+    group: "فعالیت‌ها",
+  },
+  {
+    slug: "notifications",
+    label: "اعلان‌ها",
+    icon: "account-bell",
+    group: "فعالیت‌ها",
+  },
+  {
+    slug: "my-products",
+    label: "آگهی‌های من",
+    icon: "account-layers",
+    group: "کسب‌وکار من",
+  },
+  {
+    slug: "my-shops",
+    label: "فروشگاه‌های من",
+    icon: "account-store",
+    group: "کسب‌وکار من",
+  },
+  {
+    slug: "sell-factor",
+    label: "فاکتورهای فروش",
+    icon: "account-receipt-text",
+    group: "کسب‌وکار من",
+  },
+  {
+    slug: "plans",
+    label: "اشتراک‌ها",
+    icon: "account-crown",
+    group: "کسب‌وکار من",
+  },
+  {
+    slug: "banner-slot-rent",
+    label: "اجاره بنر",
+    icon: "account-panels-top-left",
+    group: "کسب‌وکار من",
+  },
+  {
+    slug: "shopping-cart",
+    label: "سبد خرید",
+    icon: "account-shopping-cart",
+    group: "خرید و کیف پول",
+  },
+  {
+    slug: "my-wallet",
+    label: "کیف پول",
+    icon: "account-wallet",
+    group: "خرید و کیف پول",
+  },
+  {
+    slug: "wish-list",
+    label: "نشان‌ها",
+    icon: "account-bookmark",
+    group: "خرید و کیف پول",
+  },
+  {
+    slug: "edit-profile",
+    label: "ویرایش پروفایل",
+    icon: "account-user-round-pen",
+    group: "حساب کاربری",
+  },
+  {
+    slug: "verify",
+    label: "احراز هویت",
+    icon: "account-shield-check",
+    group: "حساب کاربری",
+  },
+  {
+    slug: "comments",
+    label: "نظرات",
+    icon: "account-message-square-text",
+    group: "حساب کاربری",
+  },
+  {
+    slug: "support",
+    label: "پشتیبانی",
+    icon: "account-headset",
+    group: "حساب کاربری",
+  },
+] as const;
