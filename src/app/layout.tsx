@@ -16,7 +16,7 @@ import { MobileBottomNav } from "@/components/layout/mobile-bottom-nav";
 import { SiteInteractions } from "@/components/layout/site-interactions";
 
 const criticalSwiperFallback = `
-.swiper:not(.swiper-initialized) {
+.swiper:not(.swiper-initialized):not(.avatar-swiper[data-ring-ready="true"]) {
   display: block;
   width: 100%;
   overflow-x: auto !important;
@@ -26,8 +26,12 @@ const criticalSwiperFallback = `
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
 }
-.swiper:not(.swiper-initialized)::-webkit-scrollbar { display: none; }
-.swiper:not(.swiper-initialized) > .swiper-wrapper {
+.swiper:not(.swiper-initialized):not(.avatar-swiper[data-ring-ready="true"])::-webkit-scrollbar { display: none; }
+.swiper.avatar-swiper[data-ring-ready="true"] {
+  overflow-x: hidden;
+  touch-action: pan-y;
+}
+.swiper:not(.avatar-swiper):not(.swiper-initialized) > .swiper-wrapper {
   display: flex;
   flex-flow: row nowrap;
   width: 100%;
