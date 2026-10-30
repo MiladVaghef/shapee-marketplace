@@ -31,7 +31,7 @@ export default function Page() {
                 </span>
 
                 <img
-                  src="/assets/logo/shoppie.png"
+                  src="/assets/logo/shapee.png"
                   alt="لوگو شاپی"
                   className="w-8 mb-1"
                 />

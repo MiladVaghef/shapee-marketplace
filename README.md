@@ -1,8 +1,8 @@
-# Shoppie — Persian marketplace
+# Shapee — Persian marketplace
 
 A responsive RTL marketplace frontend built with Next.js App Router, React, strict TypeScript, and SCSS. It combines the original custom design with product, tour, property, shop, and account flows.
 
-![Shoppie storefront](docs/screenshots/brands-shop-banners-desktop.png)
+![Shapee storefront](docs/screenshots/brands-shop-banners-desktop.png)
 
 ## Local development
 

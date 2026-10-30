@@ -17,11 +17,11 @@ export const metadata: Metadata = {
   title: { default: "شاپی | بازار آنلاین", template: "%s" },
   description:
     "شاپی، بازار آنلاین محصولات، فروشگاه‌ها و آگهی‌ها؛ تجربه‌ای برای خرید و معرفی کسب‌وکارها به سبک شما.",
-  applicationName: "Shoppie",
+  applicationName: "Shapee",
   openGraph: {
     type: "website",
     locale: "fa_IR",
-    siteName: "Shoppie",
+    siteName: "Shapee",
     title: "شاپی | بازار آنلاین",
     description:
       "شاپی، بازار آنلاین محصولات، فروشگاه‌ها و آگهی‌ها؛ تجربه‌ای برای خرید و معرفی کسب‌وکارها به سبک شما.",

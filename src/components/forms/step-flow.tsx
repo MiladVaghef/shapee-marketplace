@@ -65,7 +65,7 @@ export function StepFlow({
   const { notice, showNotice, dismissNotice } = useFormNotice();
   const root = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
-  const draftKey = `shoppie-draft:${pathname}`;
+  const draftKey = `shapee-draft:${pathname}`;
   const urls = useMemo(
     () => files.map((file) => URL.createObjectURL(file)),
     [files],

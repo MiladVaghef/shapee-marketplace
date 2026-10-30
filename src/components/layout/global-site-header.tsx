@@ -15,12 +15,12 @@ export function GlobalSiteHeader({
       >
         <div className="full-width flex row justify-content-between gap-5 main-container">
           <div
-            id="header-shoppie-logo"
+            id="header-shapee-logo"
             className="flex align-items-center mr-7 lg-remove"
           >
             <Link href="/">
               <img
-                src="/assets/logo/shoppie.png"
+                src="/assets/logo/shapee.png"
                 className="w-13 xl-w-11"
                 alt="لوگوی شاپی"
               />
@@ -275,7 +275,7 @@ export function GlobalSiteHeader({
                   </span>
 
                   <img
-                    src="/assets/logo/shoppie.png"
+                    src="/assets/logo/shapee.png"
                     alt="لوگو شاپی"
                     className="w-8 mb-1"
                   />

@@ -233,7 +233,7 @@ export default function Page() {
                       </span>
 
                       <span className="font-sans text-sm">
-                        {" support@shoppie.com "}
+                        {" support@shapee.com "}
                       </span>
 
                       <span className="text-xs text-muted">

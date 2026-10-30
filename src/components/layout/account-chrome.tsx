@@ -20,7 +20,7 @@ export function AccountHeader() {
           >
             <img
               className="w-14 md-w-10"
-              src="/assets/logo/shoppie.png"
+              src="/assets/logo/shapee.png"
               alt="لوگو شاپی"
             />
           </Link>

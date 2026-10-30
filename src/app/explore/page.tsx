@@ -3,14 +3,14 @@ import type { Metadata } from "next";
 import { pages } from "@/data/pages";
 import { products } from "@/data/products";
 
-export const metadata: Metadata = { title: "Shoppie | Project explorer" };
+export const metadata: Metadata = { title: "Shapee | Project explorer" };
 export default function ExplorePage() {
   const groups = [...new Set(pages.map((p) => p.group))];
   return (
     <main className="project-explorer" dir="ltr">
       <header>
         <Link href="/" className="project-brand">
-          <img src="/assets/logo/shoppie.png" alt="Shoppie" width="130" />
+          <img src="/assets/logo/shapee.png" alt="Shapee" width="130" />
         </Link>
         <span className="project-eyebrow">
           NEXT.JS · REACT · TYPESCRIPT · SCSS
@@ -60,7 +60,7 @@ export default function ExplorePage() {
           </div>
         </section>
       ))}
-      <footer>Design and original frontend: Milad Vaghef · Shoppie</footer>
+      <footer>Design and original frontend: Milad Vaghef · Shapee</footer>
     </main>
   );
 }

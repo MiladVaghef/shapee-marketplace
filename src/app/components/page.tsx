@@ -12,11 +12,11 @@ export default function Page() {
       <PageFrame className="">
         <header className="full-width flex pt-4 pb-4 h-6">
           <div className="full-width flex row justify-content-between main-container gap-5">
-            <div id="header-shoppie-logo" className="flex align-items-center">
+            <div id="header-shapee-logo" className="flex align-items-center">
               <Link href="/">
                 <img
                   className="w-13"
-                  src="/assets/logo/shoppie.png"
+                  src="/assets/logo/shapee.png"
                   alt="لوگوی شاپی"
                 />
               </Link>

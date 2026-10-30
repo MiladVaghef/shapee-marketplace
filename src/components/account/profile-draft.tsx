@@ -3,7 +3,7 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 export function ProfileDraft({ children }: { children: ReactNode }) {
   const ref = useRef<HTMLDivElement>(null);
   const [message, setMessage] = useState("");
-  const key = "shoppie-demo-profile";
+  const key = "shapee-demo-profile";
   useEffect(() => {
     try {
       const saved = JSON.parse(localStorage.getItem(key) || "null") as
