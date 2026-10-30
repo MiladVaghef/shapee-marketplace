@@ -7,7 +7,8 @@ export function HomeGoldenCampaign() {
         <div className="flex column overflow-hidden round-top-md relative md-remove">
           <img
             decoding="async"
-            loading="lazy"
+            loading="eager"
+            fetchPriority="high"
             className="full-width"
             src="/assets/images/example/golden-campaign-optimized-2.webp"
             alt="بنر کمپین طلایی"
