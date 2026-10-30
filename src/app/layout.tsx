@@ -119,8 +119,10 @@ export const metadata: Metadata = {
   description:
     "شاپی، بازار آنلاین محصولات، فروشگاه‌ها و آگهی‌ها؛ تجربه‌ای برای خرید و معرفی کسب‌وکارها به سبک شما.",
   applicationName: "Shapee",
+  alternates: { canonical: "/" },
   openGraph: {
     type: "website",
+    url: "/",
     locale: "fa_IR",
     siteName: "Shapee",
     title: "شاپی | بازار آنلاین",
@@ -128,9 +130,10 @@ export const metadata: Metadata = {
       "شاپی، بازار آنلاین محصولات، فروشگاه‌ها و آگهی‌ها؛ تجربه‌ای برای خرید و معرفی کسب‌وکارها به سبک شما.",
     images: [
       {
-        url: "/opengraph-image.png",
-        width: 1672,
-        height: 941,
+        url: "/assets/images/example/shapee-social-preview-v2.jpg",
+        type: "image/jpeg",
+        width: 1200,
+        height: 630,
         alt: "شاپی؛ مارکت‌پلیس محصولات، فروشگاه‌ها و پیشنهادهای ویژه",
       },
     ],
@@ -142,7 +145,7 @@ export const metadata: Metadata = {
       "شاپی، بازار آنلاین محصولات، فروشگاه‌ها و آگهی‌ها؛ تجربه‌ای برای خرید و معرفی کسب‌وکارها به سبک شما.",
     images: [
       {
-        url: "/opengraph-image.png",
+        url: "/assets/images/example/shapee-social-preview-v2.jpg",
         alt: "شاپی؛ مارکت‌پلیس محصولات، فروشگاه‌ها و پیشنهادهای ویژه",
       },
     ],
