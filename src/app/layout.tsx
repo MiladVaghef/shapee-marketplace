@@ -119,9 +119,9 @@ export const metadata: Metadata = {
     process.env.NEXT_PUBLIC_SITE_URL ||
       "https://shapee-marketplace.miladvaghefdev.workers.dev",
   ),
-  title: { default: "شاپی | بازار آنلاین", template: "%s" },
+  title: { default: "شاپی | مارکت پلیس آنلاین", template: "%s" },
   description:
-    "شاپی، بازار آنلاین محصولات، فروشگاه‌ها و آگهی‌ها؛ تجربه‌ای برای خرید و معرفی کسب‌وکارها به سبک شما.",
+    "شاپی، یک مارکت پلیس کامل و حرفه ای برای پیدا کردن هر نیازی که شما دارید، انواع محصولات آنلاین و فروشگاه های درون شهر و استخدام شما برای بهترین کار های ممکن.",
   applicationName: "Shapee",
   alternates: { canonical: "/" },
   openGraph: {
@@ -129,9 +129,9 @@ export const metadata: Metadata = {
     url: "/",
     locale: "fa_IR",
     siteName: "Shapee",
-    title: "شاپی | بازار آنلاین",
+    title: "شاپی | مارکت پلیس آنلاین",
     description:
-      "شاپی، بازار آنلاین محصولات، فروشگاه‌ها و آگهی‌ها؛ تجربه‌ای برای خرید و معرفی کسب‌وکارها به سبک شما.",
+      "شاپی، یک مارکت پلیس کامل و حرفه ای برای پیدا کردن هر نیازی که شما دارید، انواع محصولات آنلاین و فروشگاه های درون شهر و استخدام شما برای بهترین کار های ممکن.",
     images: [
       {
         url: "/assets/images/example/shapee-social-preview-v2.jpg",
@@ -144,9 +144,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "شاپی | بازار آنلاین",
+    title: "شاپی | مارکت پلیس آنلاین",
     description:
-      "شاپی، بازار آنلاین محصولات، فروشگاه‌ها و آگهی‌ها؛ تجربه‌ای برای خرید و معرفی کسب‌وکارها به سبک شما.",
+      "شاپی، یک مارکت پلیس کامل و حرفه ای برای پیدا کردن هر نیازی که شما دارید، انواع محصولات آنلاین و فروشگاه های درون شهر و استخدام شما برای بهترین کار های ممکن.",
     images: [
       {
         url: "/assets/images/example/shapee-social-preview-v2.jpg",

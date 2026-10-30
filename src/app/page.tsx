@@ -16,7 +16,7 @@ import { HomeJobOpportunities } from "@/components/home/sections/HomeJobOpportun
 import { HomeJoinCallToAction } from "@/components/home/sections/HomeJoinCallToAction";
 
 import { PageFrame } from "@/components/layout/page-frame";
-export const metadata: Metadata = { title: "شاپی | بازار آنلاین" };
+export const metadata: Metadata = { title: "شاپی | مارکت پلیس آنلاین" };
 export default function Page() {
   return (
     <>
