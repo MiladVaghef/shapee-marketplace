@@ -15,6 +15,101 @@ import "@/components/account/profile-hub.scss";
 import { MobileBottomNav } from "@/components/layout/mobile-bottom-nav";
 import { SiteInteractions } from "@/components/layout/site-interactions";
 
+const criticalSwiperFallback = `
+.swiper:not(.swiper-initialized) {
+  display: block;
+  width: 100%;
+  overflow-x: auto !important;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.swiper:not(.swiper-initialized)::-webkit-scrollbar { display: none; }
+.swiper:not(.swiper-initialized) > .swiper-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  min-width: 100%;
+  height: auto;
+  transform: none !important;
+  transition: none !important;
+}
+.swiper:not(.swiper-initialized) .swiper-slide {
+  flex: 0 0 calc((100% - 5px) / 2);
+  width: calc((100% - 5px) / 2) !important;
+  height: auto;
+  scroll-snap-align: start;
+}
+.swiper.categories-swiper:not(.swiper-initialized) .swiper-slide {
+  flex-basis: auto;
+  width: auto !important;
+}
+.swiper.avatar-swiper:not(.swiper-initialized) .swiper-slide {
+  flex-basis: 104px;
+  width: 104px !important;
+}
+.swiper.showcase-swiper:not(.swiper-initialized) .swiper-slide,
+.swiper.reviews:not(.swiper-initialized) .swiper-slide,
+.swiper.product-gallery-main:not(.swiper-initialized) .swiper-slide {
+  flex-basis: 100%;
+  width: 100% !important;
+}
+.swiper.related-products-swiper:not(.swiper-initialized) .swiper-slide {
+  flex-basis: 83.333%;
+  width: 83.333% !important;
+}
+.swiper.product-gallery-thumbs:not(.swiper-initialized) .swiper-slide {
+  flex-basis: 20%;
+  width: 20% !important;
+}
+@media (min-width: 768px) {
+  .swiper:not(.swiper-initialized) .swiper-slide {
+    flex-basis: calc((100% - 20px) / 3);
+    width: calc((100% - 20px) / 3) !important;
+  }
+  .swiper.avatar-swiper:not(.swiper-initialized) .swiper-slide {
+    flex-basis: 144px;
+    width: 144px !important;
+  }
+  .swiper.showcase-swiper:not(.swiper-initialized) .swiper-slide {
+    flex-basis: calc((100% - 20px) / 3);
+    width: calc((100% - 20px) / 3) !important;
+  }
+  .swiper.reviews:not(.swiper-initialized) .swiper-slide,
+  .swiper.related-products-swiper:not(.swiper-initialized) .swiper-slide {
+    flex-basis: calc((100% - 10px) / 2);
+    width: calc((100% - 10px) / 2) !important;
+  }
+}
+@media (min-width: 1300px) {
+  .swiper:not(.swiper-initialized) .swiper-slide {
+    flex-basis: calc((100% - 60px) / 5);
+    width: calc((100% - 60px) / 5) !important;
+  }
+  .swiper.shops-swiper:not(.swiper-initialized) .swiper-slide,
+  .swiper.plan-swiper:not(.swiper-initialized) .swiper-slide,
+  .swiper.plans-swiper:not(.swiper-initialized) .swiper-slide,
+  .swiper.showcase-swiper:not(.swiper-initialized) .swiper-slide {
+    flex-basis: calc((100% - 45px) / 4);
+    width: calc((100% - 45px) / 4) !important;
+  }
+  .swiper.reviews:not(.swiper-initialized) .swiper-slide {
+    flex-basis: calc((100% - 15px) / 2);
+    width: calc((100% - 15px) / 2) !important;
+  }
+  .swiper.related-products-swiper:not(.swiper-initialized) .swiper-slide {
+    flex-basis: calc((100% - 30px) / 3);
+    width: calc((100% - 30px) / 3) !important;
+  }
+  .swiper.avatar-swiper:not(.swiper-initialized) .swiper-slide {
+    flex-basis: 176px;
+    width: 176px !important;
+  }
+}
+`;
+
 export const metadata: Metadata = {
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_SITE_URL ||
@@ -59,6 +154,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="fa" dir="rtl" suppressHydrationWarning>
       <body suppressHydrationWarning>
+        <style>{criticalSwiperFallback}</style>
         <Link href="#page-content" className="skip-link">
           رفتن به محتوا
         </Link>
