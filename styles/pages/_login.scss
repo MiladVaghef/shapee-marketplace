@@ -1,0 +1,17 @@
+#login-banner {
+  background-image: url(/assets/images/example/shoppie-login-banner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1vw;
+  margin: 1vw;
+}
+
+.login-form :is(button, input, select, textarea) {
+  font-family: peyda, sans-serif;
+}
+
+.login-phone-input {
+  direction: rtl;
+  text-align: right;
+}
