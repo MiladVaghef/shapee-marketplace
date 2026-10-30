@@ -1,0 +1,126 @@
+@media (max-width: 1024px) {
+  .home-rings-bleed.inline-space {
+    padding-inline: 0;
+  }
+}
+.avatar-shell {
+  width: 100%;
+
+  .swiper-wrapper {
+    direction: ltr;
+    width: max-content;
+    gap: 24px;
+    transition: none !important;
+    will-change: transform;
+  }
+
+  .avatar-viewport {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+  }
+  .avatar-swiper {
+    direction: ltr;
+    padding-block: 4px;
+    touch-action: pan-y;
+    user-select: none;
+    cursor: grab;
+    &.is-dragging {
+      cursor: grabbing;
+    }
+    .swiper-slide {
+      width: 104px;
+      direction: rtl;
+    }
+    .swiper-slide > a {
+      gap: 10px;
+    }
+    .swiper-slide > a > span {
+      margin-top: 0;
+      font-size: 12px;
+      line-height: 1.5;
+      text-align: center;
+      white-space: nowrap;
+    }
+    img,
+    a {
+      -webkit-user-drag: none;
+    }
+  }
+
+  .avatar-ring {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      padding: 4px;
+
+      // Theme-aware gradient using CSS variables
+      background: conic-gradient(
+        from 0deg,
+        transparent 0deg,
+        var(--color-primary) 230deg,
+        transparent 300deg
+      );
+
+      -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+
+      animation: spin 10s linear infinite;
+      pointer-events: none;
+    }
+
+    img {
+      position: absolute;
+      inset: 9px;
+
+      width: calc(100% - 18px);
+      height: calc(100% - 18px);
+
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+  @media (min-width: 769px) {
+    .swiper-wrapper {
+      gap: 28px;
+    }
+    .avatar-swiper .swiper-slide {
+      width: 144px;
+    }
+    .avatar-ring {
+      width: 104px;
+      height: 104px;
+    }
+  }
+  @media (min-width: 1300px) {
+    .swiper-wrapper {
+      gap: 32px;
+    }
+    .avatar-swiper .swiper-slide {
+      width: 176px;
+    }
+    .avatar-ring {
+      width: 112px;
+      height: 112px;
+    }
+    .avatar-swiper .swiper-slide > a > span {
+      font-size: 14px;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .avatar-ring::before {
+      animation: none;
+    }
+  }
+}
