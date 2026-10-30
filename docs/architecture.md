@@ -12,7 +12,7 @@ Forms use StepFlow, FlowStep and FlowNavigation for staged entry, with FormNotic
 
 Some original account and detail pages still contain substantial presentational markup. SiteInteractions remains an adapter for their mobile search and header actions. New behavior should use explicit React event handlers and typed props. Sliders and chart components may access DOM nodes to integrate third-party libraries; they must destroy instances on navigation.
 
-The original HTML files and compiled styles/main.css are reference material. The live app imports styles/main.scss. Edit SCSS and TSX source; never patch .next output or regenerate pages from legacy files.
+The original static HTML prototypes are not kept in this repository. The live app imports styles/main.scss. Edit SCSS and TSX source; never patch .next output.
 
 ## Adding a catalog
 

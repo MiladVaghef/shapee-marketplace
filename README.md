@@ -59,8 +59,7 @@ src/data/                  Typed local fixtures
 src/lib/                   Formatting and carousel behavior
 styles/                    Original SCSS design system
 public/assets/             Runtime fonts, images and icons
-legacy/pages/              Original HTML references
- tests/                    Browser regression checks
+tests/                     Browser regression checks
 ```
 
 Route files compose components; interactive state belongs to the component that owns it. The remaining migration adapter in site-interactions.tsx supports legacy mobile search and header controls. See [architecture notes](docs/architecture.md) for the boundary and conventions.
@@ -78,7 +77,7 @@ Browser checks use a production server on port 3100. Local runs use installed Go
 
 ## Assets and attribution
 
-The original design and HTML/SCSS implementation are preserved in the source references. Generated product and storefront photographs are documented in docs/*prompts.json; runtime derivatives live in public/assets/images. Account outline icons are from Lucide, with their license in public/assets/svg/account/LICENSE. Do not rerun the one-time migration scripts during normal development: they can overwrite subsequent work.
+The current app source lives in src/app and src/components, with the original SCSS design system in styles/. Generated product and storefront photographs are documented in docs/*prompts.json; runtime derivatives live in public/assets/images. Account outline icons are from Lucide, with their license in public/assets/svg/account/LICENSE. The one-time helpers in scripts/ can modify catalog data or assets, so review their output paths before running them again.
 
 ## Deployment
 

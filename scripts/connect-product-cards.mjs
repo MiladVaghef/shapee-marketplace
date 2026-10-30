@@ -1,5 +1,4 @@
-// One-time follow-up to the HTML migration. Links existing product-card markup
-// without replacing the original design or unrelated shop/category links.
+// One-time integration of product links into the migrated React catalog.
 import fs from 'node:fs';
 import { createHash } from 'node:crypto';
 import { parsers } from 'prettier/plugins/typescript';
