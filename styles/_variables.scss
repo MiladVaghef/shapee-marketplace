@@ -1,0 +1,93 @@
+// =====================================================
+// LIGHT THEME
+// =====================================================
+
+:root {
+  // =========================
+  // EXISTING COLORS
+  // =========================
+
+  --color-primary: #792edf;
+  --color-primary-hover: #935be1;
+  --color-primary-light: #f8f5fe;
+  --color-primary-light-hover: #eee8fc;
+
+  --color-secondary: #7643e6;
+  --color-accent: #312360;
+
+  --color-text: #141414;
+  --color-text-inverse: #fafafa;
+  --color-text-muted: #6c6c6c;
+
+  --color-border: rgba(37, 37, 37, 0.104);
+
+  --color-background: #fefefe;
+  --color-background-alt: #f9f9fb;
+
+  --color-background-transparent: #fefefeba;
+
+  --color-background-subtle: #f6f3f9;
+
+  --color-background-surface: #1b222c;
+  --color-surface-alt: #42474e;
+
+  // =========================
+  // NEW VARIABLES
+  // =========================
+
+  // Cards
+  --card-background: #ffffff;
+  --card-background-hover: #f7f7f9;
+
+  // Inputs
+  --input-background: #ffffff;
+  --input-background-hover: #fafafa;
+
+  --input-border: rgba(37, 37, 37, 0.1);
+  --input-border-focus: #792edf;
+
+  --input-placeholder: #8a8a8a;
+
+  // Shadows
+  --shadow-sm: rgba(0, 0, 0, 0.05);
+
+  --shadow-md: rgba(0, 0, 0, 0.08);
+
+  --shadow-lg: rgba(0, 0, 0, 0.12);
+
+  // Glass Effects
+  --glass-background: rgba(255, 255, 255, 0.72);
+
+  --glass-background-strong: rgba(255, 255, 255, 0.88);
+
+  --glass-border: rgba(255, 255, 255, 0.35);
+
+  // Overlays
+  --overlay-dark: rgba(0, 0, 0, 0.45);
+
+  --overlay-light: rgba(255, 255, 255, 0.55);
+
+  // Header / Navbar
+  --header-background: rgba(255, 255, 255, 0.78);
+
+  --header-border: rgba(37, 37, 37, 0.08);
+  --header-shadow: rgba(0, 0, 0, 0.05);
+
+  // Dropdown / Modal
+  --dropdown-background: #ffffff;
+  --dropdown-border: rgba(37, 37, 37, 0.08);
+
+  --modal-background: #ffffff;
+  --modal-border: rgba(37, 37, 37, 0.08);
+
+  // Dividers
+  --divider-color: rgba(37, 37, 37, 0.08);
+
+  // Icons
+  --icon-color: #232323;
+  --icon-muted: #7c7c7c;
+
+  // Scrollbar
+  --scrollbar-track: #f1f1f1;
+  --scrollbar-thumb: var(--color-primary);
+}
