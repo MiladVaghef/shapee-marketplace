@@ -11,9 +11,10 @@ import { MobileBottomNav } from "@/components/layout/mobile-bottom-nav";
 import { SiteInteractions } from "@/components/layout/site-interactions";
 
 export const metadata: Metadata = {
-  ...(process.env.NEXT_PUBLIC_SITE_URL
-    ? { metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL) }
-    : {}),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ||
+      "https://shapee-marketplace.miladvaghefdev.workers.dev",
+  ),
   title: { default: "شاپی | بازار آنلاین", template: "%s" },
   description:
     "شاپی، بازار آنلاین محصولات، فروشگاه‌ها و آگهی‌ها؛ تجربه‌ای برای خرید و معرفی کسب‌وکارها به سبک شما.",
