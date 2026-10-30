@@ -1,0 +1,45 @@
+.listing-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.listing-fields label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: Peyda, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+}
+.listing-fields input,
+.listing-fields select {
+  font: inherit;
+  color: var(--color-text);
+  background: var(--color-background-alt);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 12px;
+  width: 100%;
+  min-width: 0;
+}
+.listing-drawer {
+  position: fixed;
+  inset-inline: 0;
+  bottom: 0;
+  z-index: 3100;
+  max-height: 85dvh;
+  overflow: auto;
+  border-radius: 20px 20px 0 0;
+  padding: 24px;
+}
+.listing-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 3000;
+}
+.listing .listing-fields button {
+  font-family: Peyda, sans-serif;
+}
+.listing [hidden] {
+  display: none !important;
+}
