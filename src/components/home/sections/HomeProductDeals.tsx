@@ -4,9 +4,9 @@ export function HomeProductDeals() {
   return (
     <div className="inline-space md-p-0">
       <div className="flex overflow-hidden round-md relative md-mr-3 md-ml-3">
-        <img
+        <img decoding="async" loading="lazy"
           className="full-width"
-          src="/assets/images/example/single-products-banner.png"
+          src="/assets/images/example/single-products-banner.webp"
           alt="بنر کمپین طلایی"
         />
       </div>
@@ -36,7 +36,7 @@ export function HomeProductDeals() {
                   </span>
                 </div>
 
-                <img
+                <img decoding="async" loading="lazy"
                   src="/assets/images/example/used-iphone.jpg"
                   alt="فروش آیفون 16 پرو رجیستر شده"
                   className="full-width scale-up"
@@ -97,8 +97,8 @@ export function HomeProductDeals() {
                   </span>
                 </div>
 
-                <img
-                  src="/assets/images/example/car-front-view.jpg"
+                <img decoding="async" loading="lazy"
+                  src="/assets/images/example/car-front-view.webp"
                   alt="ماشین تمیز بدون خط و خش"
                   className="full-width scale-up"
                 />
@@ -158,7 +158,7 @@ export function HomeProductDeals() {
                   </span>
                 </div>
 
-                <img
+                <img decoding="async" loading="lazy"
                   src="/assets/images/example/dog.jpg"
                   alt="دو عدد سگ بامزه عروسکی"
                   className="full-width scale-up"
@@ -219,7 +219,7 @@ export function HomeProductDeals() {
                   </span>
                 </div>
 
-                <img
+                <img decoding="async" loading="lazy"
                   src="/assets/images/example/bed-hang.jpg"
                   alt="آویز تخت موزیکال نو"
                   className="full-width scale-up"
@@ -280,8 +280,8 @@ export function HomeProductDeals() {
                   </span>
                 </div>
 
-                <img
-                  src="/assets/images/example/headset.jpg"
+                <img decoding="async" loading="lazy"
+                  src="/assets/images/example/headset.webp"
                   alt="هدست اونیکیما RGB دار"
                   className="full-width scale-up"
                 />
@@ -341,7 +341,7 @@ export function HomeProductDeals() {
                   </span>
                 </div>
 
-                <img
+                <img decoding="async" loading="lazy"
                   src="/assets/images/example/used-iphone.jpg"
                   alt="فروش آیفون 16 پرو رجیستر شده"
                   className="full-width scale-up"

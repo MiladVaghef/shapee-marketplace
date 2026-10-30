@@ -23,7 +23,7 @@ export function ListingCard({
     <article className="form p-0 overflow-hidden hover-fade-in">
       <Link href={item.href}>
         <div className="relative">
-          <img
+          <img decoding="async" loading="lazy"
             src={item.image}
             alt={item.title}
             className="full-width h-180px object-cover"
@@ -34,7 +34,7 @@ export function ListingCard({
             <h3 className="font-peyda bold text-md mb-3">{item.title}</h3>
             {item.logo && (
               <div className="w-12 h-12 round-full overflow-hidden outline-white -mt-20 index-1">
-                <img
+                <img decoding="async" loading="lazy"
                   src={item.logo}
                   alt={item.title}
                   className="full-width full-height object-cover"

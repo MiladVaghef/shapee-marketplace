@@ -20,7 +20,7 @@ export function GlobalSiteHeader({
           >
             <Link href="/">
               <img
-                src="/assets/logo/shapee.png"
+                src="/assets/logo/shapee-optimized-2.webp"
                 className="w-13 xl-w-11"
                 alt="لوگوی شاپی"
               />
@@ -99,7 +99,7 @@ export function GlobalSiteHeader({
                       className="search-results-product flex row gap-5 justify-content-between align-items-center full-width overflow-hidden"
                     >
                       <div className="flex">
-                        <img
+                        <img decoding="async" loading="lazy"
                           className="w-10 round-md"
                           src="/assets/images/example/Jaguar-F-Type.jpg"
                           alt="محصول"
@@ -139,7 +139,7 @@ export function GlobalSiteHeader({
                       className="search-results-product flex row gap-5 justify-content-between align-items-center full-width overflow-hidden"
                     >
                       <div className="flex">
-                        <img
+                        <img decoding="async" loading="lazy"
                           className="w-10 round-md"
                           src="/assets/images/example/Jaguar-F-Type.jpg"
                           alt="محصول"
@@ -179,7 +179,7 @@ export function GlobalSiteHeader({
                       className="search-results-product flex row gap-5 justify-content-between align-items-center full-width overflow-hidden"
                     >
                       <div className="flex">
-                        <img
+                        <img decoding="async" loading="lazy"
                           className="w-10 round-md"
                           src="/assets/images/example/Jaguar-F-Type.jpg"
                           alt="محصول"
@@ -219,7 +219,7 @@ export function GlobalSiteHeader({
                       className="search-results-product flex row gap-5 justify-content-between align-items-center full-width overflow-hidden"
                     >
                       <div className="flex">
-                        <img
+                        <img decoding="async" loading="lazy"
                           className="w-10 round-md"
                           src="/assets/images/example/Jaguar-F-Type.jpg"
                           alt="محصول"
@@ -275,7 +275,7 @@ export function GlobalSiteHeader({
                   </span>
 
                   <img
-                    src="/assets/logo/shapee.png"
+                    src="/assets/logo/shapee-optimized-2.webp"
                     alt="لوگو شاپی"
                     className="w-8 mb-1"
                   />
@@ -301,7 +301,7 @@ export function GlobalSiteHeader({
               type="button"
             >
               <div className="flex relative">
-                <img
+                <img decoding="async" loading="lazy"
                   src="/assets/images/example/profile-picture.jpg"
                   className="w-6 h-6 round-full"
                   alt=""
@@ -387,7 +387,7 @@ export function GlobalSiteHeader({
             <div id="search-results" className="flex column gap-5 round-md">
               <div className="search-results-product flex row gap-5 justify-content-between align-items-stretch full-width overflow-hidden">
                 <div className="flex">
-                  <img
+                  <img decoding="async" loading="lazy"
                     className="w-15 round-md"
                     src="/assets/images/example/Jaguar-F-Type.jpg"
                     alt="محصول"
@@ -421,7 +421,7 @@ export function GlobalSiteHeader({
 
               <div className="search-results-product flex row gap-5 justify-content-between align-items-stretch full-width overflow-hidden">
                 <div className="flex">
-                  <img
+                  <img decoding="async" loading="lazy"
                     className="w-15 round-md"
                     src="/assets/images/example/Jaguar-F-Type.jpg"
                     alt="محصول"
@@ -453,7 +453,7 @@ export function GlobalSiteHeader({
 
               <div className="search-results-product flex row gap-5 justify-content-between align-items-stretch full-width overflow-hidden">
                 <div className="flex">
-                  <img
+                  <img decoding="async" loading="lazy"
                     className="w-15 round-md"
                     src="/assets/images/example/Jaguar-F-Type.jpg"
                     alt="محصول"

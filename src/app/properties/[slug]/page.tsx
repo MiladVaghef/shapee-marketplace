@@ -115,7 +115,7 @@ export default async function PropertyPage({ params }: Props) {
                 href={`/properties/${p.slug}`}
                 key={p.slug}
               >
-                <img src={p.image} alt={p.title} loading="lazy" />
+                <img decoding="async" src={p.image} alt={p.title} loading="lazy" />
                 <div>
                   <span className="tour-eyebrow">{p.location}</span>
                   <h3>{p.title}</h3>

@@ -4,9 +4,9 @@ export function HomeFeaturedStores() {
   return (
     <div className="inline-space md-p-0">
       <div className="flex overflow-hidden round-md relative md-ml-4 md-mr-4">
-        <img
+        <img decoding="async" loading="lazy"
           className="full-width"
-          src="/assets/images/example/online-shops-banner.jpg"
+          src="/assets/images/example/online-shops-banner-optimized-2.webp"
           alt="بنر کمپین طلایی"
         />
       </div>

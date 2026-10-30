@@ -91,7 +91,7 @@ export default function Page() {
                       </div>
                     </div>
 
-                    <img
+                    <img decoding="async" loading="lazy"
                       src="/assets/placeholders/banner-slot-wireframe.svg"
                       alt="نمای شماتیک جایگاه بنر در صفحه"
                       className="block full-width scale-up"
@@ -156,7 +156,7 @@ export default function Page() {
                       </div>
                     </div>
 
-                    <img
+                    <img decoding="async" loading="lazy"
                       src="/assets/placeholders/banner-slot-wireframe.svg"
                       alt="نمای شماتیک جایگاه بنر در صفحه"
                       className="block full-width scale-up"
@@ -221,7 +221,7 @@ export default function Page() {
                       </div>
                     </div>
 
-                    <img
+                    <img decoding="async" loading="lazy"
                       src="/assets/placeholders/banner-slot-wireframe.svg"
                       alt="نمای شماتیک جایگاه بنر در صفحه"
                       className="block full-width scale-up"
@@ -286,7 +286,7 @@ export default function Page() {
                       </div>
                     </div>
 
-                    <img
+                    <img decoding="async" loading="lazy"
                       src="/assets/placeholders/banner-slot-wireframe.svg"
                       alt="نمای شماتیک جایگاه بنر در صفحه"
                       className="block full-width scale-up"
@@ -351,7 +351,7 @@ export default function Page() {
                       </div>
                     </div>
 
-                    <img
+                    <img decoding="async" loading="lazy"
                       src="/assets/placeholders/banner-slot-wireframe.svg"
                       alt="نمای شماتیک جایگاه بنر در صفحه"
                       className="block full-width scale-up"
@@ -416,7 +416,7 @@ export default function Page() {
                       </div>
                     </div>
 
-                    <img
+                    <img decoding="async" loading="lazy"
                       src="/assets/placeholders/banner-slot-wireframe.svg"
                       alt="نمای شماتیک جایگاه بنر در صفحه"
                       className="block full-width scale-up"
@@ -481,7 +481,7 @@ export default function Page() {
                       </div>
                     </div>
 
-                    <img
+                    <img decoding="async" loading="lazy"
                       src="/assets/placeholders/banner-slot-wireframe.svg"
                       alt="نمای شماتیک جایگاه بنر در صفحه"
                       className="block full-width scale-up"
@@ -546,7 +546,7 @@ export default function Page() {
                       </div>
                     </div>
 
-                    <img
+                    <img decoding="async" loading="lazy"
                       src="/assets/placeholders/banner-slot-wireframe.svg"
                       alt="نمای شماتیک جایگاه بنر در صفحه"
                       className="block full-width scale-up"
@@ -646,7 +646,7 @@ export default function Page() {
             </div>
 
             <div className="flex column full-width gap-0 pl-5 pr-5">
-              <img
+              <img decoding="async" loading="lazy"
                 src="/assets/placeholders/banner-slot-wireframe.svg"
                 className="full-width round-top-md"
                 alt="پیش‌نمایش شماتیک محل قرارگیری بنر"

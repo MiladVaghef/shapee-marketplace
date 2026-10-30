@@ -4,8 +4,8 @@ export function HomeJobOpportunities() {
   return (
     <div className="inline-space md-p-0">
       <div className="flex column product-showcase justify-content-center round-lg md-ml-3 md-mr-3">
-        <img
-          src="/assets/images/example/job-seeking-banner.png"
+        <img decoding="async" loading="lazy"
+          src="/assets/images/example/job-seeking-banner.webp"
           alt="بنر ماشین های لوکس"
           className="round-lg"
         />
@@ -54,7 +54,7 @@ export function HomeJobOpportunities() {
                   <div className="flex column justify-content-center align-items-center pl-5 pr-5 index-1000">
                     <div className="flex column justify-content-center align-items-center gap-3 full-width pb-3">
                       <div className="shadow-md round-full mt-8 h-10 w-10 outline-white overflow-hidden">
-                        <img
+                        <img decoding="async" loading="lazy"
                           src="/assets/logo/abr-arvan.jpeg"
                           alt="لوگو فروشگاه"
                           className="full-width full-height round-full block"
@@ -172,7 +172,7 @@ export function HomeJobOpportunities() {
                   <div className="flex column justify-content-center align-items-center pl-5 pr-5 index-1000">
                     <div className="flex column justify-content-center align-items-center gap-3 full-width pb-3">
                       <div className="shadow-md round-full mt-8 h-10 w-10 outline-white overflow-hidden">
-                        <img
+                        <img decoding="async" loading="lazy"
                           src="/assets/logo/panter.jpg"
                           alt="لوگو فروشگاه"
                           className="full-width full-height round-full block"
@@ -290,7 +290,7 @@ export function HomeJobOpportunities() {
                   <div className="flex column justify-content-center align-items-center pl-5 pr-5 index-1000">
                     <div className="flex column justify-content-center align-items-center gap-3 full-width pb-3">
                       <div className="shadow-md round-full mt-8 h-10 w-10 outline-white overflow-hidden">
-                        <img
+                        <img decoding="async" loading="lazy"
                           src="/assets/logo/blue-logo.webp"
                           alt="لوگو فروشگاه"
                           className="full-width full-height round-full block"
@@ -408,7 +408,7 @@ export function HomeJobOpportunities() {
                   <div className="flex column justify-content-center align-items-center pl-5 pr-5 index-1000">
                     <div className="flex column justify-content-center align-items-center gap-3 full-width pb-3">
                       <div className="shadow-md round-full mt-8 h-10 w-10 outline-white overflow-hidden">
-                        <img
+                        <img decoding="async" loading="lazy"
                           src="/assets/logo/defigo.jpg"
                           alt="لوگو فروشگاه"
                           className="full-width full-height round-full block"
@@ -526,7 +526,7 @@ export function HomeJobOpportunities() {
                   <div className="flex column justify-content-center align-items-center pl-5 pr-5 index-1000">
                     <div className="flex column justify-content-center align-items-center gap-3 full-width pb-3">
                       <div className="shadow-md round-full mt-8 h-10 w-10 outline-white overflow-hidden">
-                        <img
+                        <img decoding="async" loading="lazy"
                           src="/assets/logo/rakhsh.jpg"
                           alt="لوگو فروشگاه"
                           className="full-width full-height round-full block"
@@ -644,7 +644,7 @@ export function HomeJobOpportunities() {
                   <div className="flex column justify-content-center align-items-center pl-5 pr-5 index-1000">
                     <div className="flex column justify-content-center align-items-center gap-3 full-width pb-3">
                       <div className="shadow-md round-full mt-8 h-10 w-10 outline-white overflow-hidden">
-                        <img
+                        <img decoding="async" loading="lazy"
                           src="/assets/logo/irancell.jpg"
                           alt="لوگو فروشگاه"
                           className="full-width full-height round-full block"
@@ -762,7 +762,7 @@ export function HomeJobOpportunities() {
                   <div className="flex column justify-content-center align-items-center pl-5 pr-5 index-1000">
                     <div className="flex column justify-content-center align-items-center gap-3 full-width pb-3">
                       <div className="shadow-md round-full mt-8 h-10 w-10 outline-white overflow-hidden">
-                        <img
+                        <img decoding="async" loading="lazy"
                           src="/assets/logo/iphone-logo.jpg"
                           alt="لوگو فروشگاه"
                           className="full-width full-height round-full block"

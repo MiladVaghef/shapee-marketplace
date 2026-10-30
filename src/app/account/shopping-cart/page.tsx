@@ -37,7 +37,7 @@ export default function Page() {
                     </label>
                   </div>
 
-                  <img
+                  <img decoding="async" loading="lazy"
                     src="/assets/images/example/headphone.jpg"
                     alt=""
                     className="w-15 h-15 md-w-12 md-h-12 round-md object-cover flex-shrink-0"
@@ -99,7 +99,7 @@ export default function Page() {
                     </label>
                   </div>
 
-                  <img
+                  <img decoding="async" loading="lazy"
                     src="/assets/images/example/perfume.jpg"
                     alt=""
                     className="w-15 h-15 md-w-12 md-h-12 round-md object-cover flex-shrink-0"
@@ -161,7 +161,7 @@ export default function Page() {
                     </label>
                   </div>
 
-                  <img
+                  <img decoding="async" loading="lazy"
                     src="/assets/images/example/headphone.jpg"
                     alt=""
                     className="w-15 h-15 md-w-12 md-h-12 round-md object-cover flex-shrink-0"
@@ -223,7 +223,7 @@ export default function Page() {
                     </label>
                   </div>
 
-                  <img
+                  <img decoding="async" loading="lazy"
                     src="/assets/images/example/perfume.jpg"
                     alt=""
                     className="w-15 h-15 md-w-12 md-h-12 round-md object-cover flex-shrink-0"

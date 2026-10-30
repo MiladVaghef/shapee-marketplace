@@ -82,7 +82,7 @@ export default function Page() {
             <div id="search-results" className="flex column gap-5 round-md">
               <div className="search-results-product flex row gap-5 justify-content-between align-items-stretch full-width overflow-hidden">
                 <div className="flex">
-                  <img
+                  <img decoding="async" loading="lazy"
                     className="w-15 round-md"
                     src="/assets/images/example/Jaguar-F-Type.jpg"
                     alt="محصول"
@@ -116,7 +116,7 @@ export default function Page() {
 
               <div className="search-results-product flex row gap-5 justify-content-between align-items-stretch full-width overflow-hidden">
                 <div className="flex">
-                  <img
+                  <img decoding="async" loading="lazy"
                     className="w-15 round-md"
                     src="/assets/images/example/Jaguar-F-Type.jpg"
                     alt="محصول"
@@ -148,7 +148,7 @@ export default function Page() {
 
               <div className="search-results-product flex row gap-5 justify-content-between align-items-stretch full-width overflow-hidden">
                 <div className="flex">
-                  <img
+                  <img decoding="async" loading="lazy"
                     className="w-15 round-md"
                     src="/assets/images/example/Jaguar-F-Type.jpg"
                     alt="محصول"
@@ -180,7 +180,7 @@ export default function Page() {
 
               <div className="search-results-product flex row gap-5 justify-content-between align-items-stretch full-width overflow-hidden">
                 <div className="flex">
-                  <img
+                  <img decoding="async" loading="lazy"
                     className="w-15 round-md"
                     src="/assets/images/example/Jaguar-F-Type.jpg"
                     alt="محصول"
@@ -212,7 +212,7 @@ export default function Page() {
 
               <div className="search-results-product flex row gap-5 justify-content-between align-items-stretch full-width overflow-hidden">
                 <div className="flex">
-                  <img
+                  <img decoding="async" loading="lazy"
                     className="w-15 round-md"
                     src="/assets/images/example/Jaguar-F-Type.jpg"
                     alt="محصول"
@@ -250,7 +250,7 @@ export default function Page() {
             <section className="form">
               <div className="flex md-column gap-5 relative">
                 <div className="flex justify-content-center">
-                  <img
+                  <img decoding="async" loading="lazy"
                     src="/assets/images/example/profile-picture.jpg"
                     alt="Profile"
                     className="w-60px h-60px round-full"
@@ -480,7 +480,7 @@ export default function Page() {
                         </div>
                       </div>
 
-                      <img
+                      <img decoding="async" loading="lazy"
                         src="/assets/images/products/studio-headphones.webp"
                         alt="هدفون بی‌سیم گرافیتی"
                         className="block full-width scale-up"
@@ -543,7 +543,7 @@ export default function Page() {
                         </div>
                       </div>
 
-                      <img
+                      <img decoding="async" loading="lazy"
                         src="/assets/images/products/studio-perfume.webp"
                         alt="ادو پرفیوم شیشه‌ای"
                         className="block full-width scale-up"
@@ -603,7 +603,7 @@ export default function Page() {
                         </div>
                       </div>
 
-                      <img
+                      <img decoding="async" loading="lazy"
                         src="/assets/images/example/toy.avif"
                         alt="اسباب‌بازی عروسکی"
                         className="block full-width scale-up"
@@ -663,7 +663,7 @@ export default function Page() {
                         </div>
                       </div>
 
-                      <img
+                      <img decoding="async" loading="lazy"
                         src="/assets/images/products/studio-controller.webp"
                         alt="دسته بازی بی‌سیم"
                         className="block full-width scale-up"
@@ -723,7 +723,7 @@ export default function Page() {
                         </div>
                       </div>
 
-                      <img
+                      <img decoding="async" loading="lazy"
                         src="/assets/images/products/studio-tshirt.webp"
                         alt="تی‌شرت نخ پنبه کرم"
                         className="block full-width scale-up"
@@ -783,7 +783,7 @@ export default function Page() {
                         </div>
                       </div>
 
-                      <img
+                      <img decoding="async" loading="lazy"
                         src="/assets/images/products/studio-vase.webp"
                         alt="گلدان سرامیکی دکوراتیو"
                         className="block full-width scale-up"

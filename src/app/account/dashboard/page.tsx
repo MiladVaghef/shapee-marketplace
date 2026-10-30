@@ -239,7 +239,7 @@ export default function Page() {
                 className="flex align-items-center justify-content-between text-decoration-none"
               >
                 <div className="flex align-items-center gap-3">
-                  <img
+                  <img decoding="async" loading="lazy"
                     src="/assets/placeholders/136x136.svg"
                     alt=""
                     className="w-50px h-50px round-md object-cover"
@@ -260,7 +260,7 @@ export default function Page() {
                 className="flex align-items-center justify-content-between text-decoration-none"
               >
                 <div className="flex align-items-center gap-3">
-                  <img
+                  <img decoding="async" loading="lazy"
                     src="/assets/placeholders/136x136.svg"
                     alt=""
                     className="w-50px h-50px round-md object-cover"
@@ -281,7 +281,7 @@ export default function Page() {
                 className="flex align-items-center justify-content-between text-decoration-none"
               >
                 <div className="flex align-items-center gap-3">
-                  <img
+                  <img decoding="async" loading="lazy"
                     src="/assets/placeholders/136x136.svg"
                     alt=""
                     className="w-50px h-50px round-md object-cover"
@@ -302,7 +302,7 @@ export default function Page() {
                 className="flex align-items-center justify-content-between text-decoration-none"
               >
                 <div className="flex align-items-center gap-3">
-                  <img
+                  <img decoding="async" loading="lazy"
                     src="/assets/placeholders/136x136.svg"
                     alt=""
                     className="w-50px h-50px round-md object-cover"
@@ -336,7 +336,7 @@ export default function Page() {
                 className="flex align-items-center justify-content-between text-decoration-none"
               >
                 <div className="flex align-items-center gap-3">
-                  <img
+                  <img decoding="async" loading="lazy"
                     src="/assets/placeholders/136x136.svg"
                     alt=""
                     className="w-50px h-50px round-md object-cover"
@@ -363,7 +363,7 @@ export default function Page() {
                 className="flex align-items-center justify-content-between text-decoration-none"
               >
                 <div className="flex align-items-center gap-3">
-                  <img
+                  <img decoding="async" loading="lazy"
                     src="/assets/placeholders/136x136.svg"
                     alt=""
                     className="w-50px h-50px round-md object-cover"
@@ -390,7 +390,7 @@ export default function Page() {
                 className="flex align-items-center justify-content-between text-decoration-none"
               >
                 <div className="flex align-items-center gap-3">
-                  <img
+                  <img decoding="async" loading="lazy"
                     src="/assets/placeholders/136x136.svg"
                     alt=""
                     className="w-50px h-50px round-md object-cover"
@@ -417,7 +417,7 @@ export default function Page() {
                 className="flex align-items-center justify-content-between text-decoration-none"
               >
                 <div className="flex align-items-center gap-3">
-                  <img
+                  <img decoding="async" loading="lazy"
                     src="/assets/placeholders/136x136.svg"
                     alt=""
                     className="w-50px h-50px round-md object-cover"

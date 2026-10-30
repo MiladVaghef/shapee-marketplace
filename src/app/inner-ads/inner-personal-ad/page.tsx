@@ -81,7 +81,7 @@ export default function Page() {
             <div id="search-results" className="flex column gap-5 round-md">
               <div className="search-results-product flex row gap-5 justify-content-between align-items-stretch full-width overflow-hidden">
                 <div className="flex">
-                  <img
+                  <img decoding="async" loading="lazy"
                     className="w-15 round-md"
                     src="/assets/images/example/Jaguar-F-Type.jpg"
                     alt="محصول"
@@ -115,7 +115,7 @@ export default function Page() {
 
               <div className="search-results-product flex row gap-5 justify-content-between align-items-stretch full-width overflow-hidden">
                 <div className="flex">
-                  <img
+                  <img decoding="async" loading="lazy"
                     className="w-15 round-md"
                     src="/assets/images/example/Jaguar-F-Type.jpg"
                     alt="محصول"
@@ -147,7 +147,7 @@ export default function Page() {
 
               <div className="search-results-product flex row gap-5 justify-content-between align-items-stretch full-width overflow-hidden">
                 <div className="flex">
-                  <img
+                  <img decoding="async" loading="lazy"
                     className="w-15 round-md"
                     src="/assets/images/example/Jaguar-F-Type.jpg"
                     alt="محصول"
@@ -179,7 +179,7 @@ export default function Page() {
 
               <div className="search-results-product flex row gap-5 justify-content-between align-items-stretch full-width overflow-hidden">
                 <div className="flex">
-                  <img
+                  <img decoding="async" loading="lazy"
                     className="w-15 round-md"
                     src="/assets/images/example/Jaguar-F-Type.jpg"
                     alt="محصول"
@@ -211,7 +211,7 @@ export default function Page() {
 
               <div className="search-results-product flex row gap-5 justify-content-between align-items-stretch full-width overflow-hidden">
                 <div className="flex">
-                  <img
+                  <img decoding="async" loading="lazy"
                     className="w-15 round-md"
                     src="/assets/images/example/Jaguar-F-Type.jpg"
                     alt="محصول"
@@ -299,7 +299,7 @@ export default function Page() {
 
                 <div className="mb-3">
                   <div className="flex align-items-center gap-3 mb-5">
-                    <img
+                    <img decoding="async" loading="lazy"
                       src="/assets/images/example/profile-picture.jpg"
                       className="w-60px h-60px round-full"
                       alt=""
@@ -391,7 +391,7 @@ export default function Page() {
                   <div className="swiper product-gallery-main mb-3 relative">
                     <div className="swiper-wrapper">
                       <div className="swiper-slide">
-                        <img
+                        <img decoding="async" loading="lazy"
                           src="/assets/images/example/2015-bmw-i8-first-drive-rear-angle.webp"
                           alt="BMW i8"
                           className="full-width round-md object-cover block pointer"
@@ -399,7 +399,7 @@ export default function Page() {
                       </div>
 
                       <div className="swiper-slide">
-                        <img
+                        <img decoding="async" loading="lazy"
                           src="/assets/images/example/BMWi_i8_Gallery_Exterior_01-1_1.webp"
                           alt="BMW i8"
                           className="full-width round-md object-cover block pointer"
@@ -407,7 +407,7 @@ export default function Page() {
                       </div>
 
                       <div className="swiper-slide">
-                        <img
+                        <img decoding="async" loading="lazy"
                           src="/assets/images/example/BMWi_i8_Gallery_Exterior_03.webp"
                           alt="BMW i8"
                           className="full-width round-md object-cover block pointer"
@@ -415,7 +415,7 @@ export default function Page() {
                       </div>
 
                       <div className="swiper-slide">
-                        <img
+                        <img decoding="async" loading="lazy"
                           src="/assets/images/example/BMWi_i8_Gallery_Exterior_04.webp"
                           alt="BMW i8"
                           className="full-width round-md object-cover block pointer"
@@ -423,7 +423,7 @@ export default function Page() {
                       </div>
 
                       <div className="swiper-slide">
-                        <img
+                        <img decoding="async" loading="lazy"
                           src="/assets/images/example/BMWi_i8_Gallery_Exterior_05.webp"
                           alt="BMW i8"
                           className="full-width round-md object-cover block pointer"
@@ -431,7 +431,7 @@ export default function Page() {
                       </div>
 
                       <div className="swiper-slide">
-                        <img
+                        <img decoding="async" loading="lazy"
                           src="/assets/images/example/BMWi_i8_Gallery_Exterior_06-1.webp"
                           alt="BMW i8"
                           className="full-width round-md object-cover block pointer"
@@ -439,7 +439,7 @@ export default function Page() {
                       </div>
 
                       <div className="swiper-slide">
-                        <img
+                        <img decoding="async" loading="lazy"
                           src="/assets/images/example/BMWi_i8_Gallery_Interior_01.webp"
                           alt="BMW i8"
                           className="full-width round-md object-cover block pointer"
@@ -473,7 +473,7 @@ export default function Page() {
                   <div className="swiper product-gallery-thumbs">
                     <div className="swiper-wrapper">
                       <div className="swiper-slide">
-                        <img
+                        <img decoding="async" loading="lazy"
                           src="/assets/images/example/2015-bmw-i8-first-drive-rear-angle.webp"
                           className="full-width round-sm cursor-pointer block"
                           alt=""
@@ -481,7 +481,7 @@ export default function Page() {
                       </div>
 
                       <div className="swiper-slide">
-                        <img
+                        <img decoding="async" loading="lazy"
                           src="/assets/images/example/BMWi_i8_Gallery_Exterior_01-1_1.webp"
                           className="full-width round-sm cursor-pointer block"
                           alt=""
@@ -489,7 +489,7 @@ export default function Page() {
                       </div>
 
                       <div className="swiper-slide">
-                        <img
+                        <img decoding="async" loading="lazy"
                           src="/assets/images/example/BMWi_i8_Gallery_Exterior_03.webp"
                           className="full-width round-sm cursor-pointer block"
                           alt=""
@@ -497,7 +497,7 @@ export default function Page() {
                       </div>
 
                       <div className="swiper-slide">
-                        <img
+                        <img decoding="async" loading="lazy"
                           src="/assets/images/example/BMWi_i8_Gallery_Exterior_04.webp"
                           className="full-width round-sm cursor-pointer block"
                           alt=""
@@ -505,7 +505,7 @@ export default function Page() {
                       </div>
 
                       <div className="swiper-slide">
-                        <img
+                        <img decoding="async" loading="lazy"
                           src="/assets/images/example/BMWi_i8_Gallery_Exterior_05.webp"
                           className="full-width round-sm cursor-pointer block"
                           alt=""
@@ -513,7 +513,7 @@ export default function Page() {
                       </div>
 
                       <div className="swiper-slide">
-                        <img
+                        <img decoding="async" loading="lazy"
                           src="/assets/images/example/BMWi_i8_Gallery_Exterior_06-1.webp"
                           className="full-width round-sm cursor-pointer block"
                           alt=""
@@ -521,7 +521,7 @@ export default function Page() {
                       </div>
 
                       <div className="swiper-slide">
-                        <img
+                        <img decoding="async" loading="lazy"
                           src="/assets/images/example/BMWi_i8_Gallery_Interior_01.webp"
                           className="full-width round-sm cursor-pointer block"
                           alt=""
@@ -686,7 +686,7 @@ export default function Page() {
                             </span>
                           </div>
 
-                          <img
+                          <img decoding="async" loading="lazy"
                             src="/assets/placeholders/400x250.svg"
                             alt=""
                             className="full-width scale-up"
@@ -733,7 +733,7 @@ export default function Page() {
                             </span>
                           </div>
 
-                          <img
+                          <img decoding="async" loading="lazy"
                             src="/assets/placeholders/400x250.svg"
                             alt=""
                             className="full-width scale-up"
@@ -780,7 +780,7 @@ export default function Page() {
                             </span>
                           </div>
 
-                          <img
+                          <img decoding="async" loading="lazy"
                             src="/assets/placeholders/400x250.svg"
                             alt=""
                             className="full-width scale-up"
@@ -827,7 +827,7 @@ export default function Page() {
                             </span>
                           </div>
 
-                          <img
+                          <img decoding="async" loading="lazy"
                             src="/assets/placeholders/400x250.svg"
                             alt=""
                             className="full-width scale-up"

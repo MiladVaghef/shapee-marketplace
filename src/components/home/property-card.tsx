@@ -11,7 +11,7 @@ export function HomePropertyCard({
       className="flex column round-md overflow-hidden md-mr-3 md-ml-3"
     >
       <div>
-        <img
+        <img decoding="async" loading="lazy"
           src={property.image}
           alt={property.title}
           className="full-width round-lg"

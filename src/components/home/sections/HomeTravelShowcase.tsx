@@ -5,8 +5,8 @@ export function HomeTravelShowcase() {
   return (
     <div className="inline-space md-p-0">
       <div className="flex column product-showcase justify-content-center round-lg md-mr-3 md-ml-3">
-        <img
-          src="/assets/images/example/tour-banner.png"
+        <img decoding="async" loading="lazy"
+          src="/assets/images/example/tour-banner.webp"
           alt="بنر ماشین های لوکس"
         />
       </div>

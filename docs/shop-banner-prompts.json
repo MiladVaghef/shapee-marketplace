@@ -12,14 +12,14 @@
     "rahro": "Use case: photorealistic-natural. Asset type: wide shop banner for a polished Persian marketplace card. Photograph a complete retail interior, clearly recognizable as a real shop, not an isolated product or a product close-up. A thoughtfully designed travel bag and backpack retail shop interior with oak shelves displaying olive, tan and navy backpacks, leather weekend bags and luggage, a central display table and a simple bench. Natural daylight, cream walls and sage-green fixtures. Editorial architectural photography, eye-level wide-angle view showing the room's depth, realistic materials, cohesive premium photographic style. Landscape composition suitable for a 2:1 banner crop; keep the entire important scene within the middle two-thirds vertically, with space at the bottom center for a separate logo overlay. No people, no readable text, no signage lettering, no logos, no watermarks. One continuous photograph, no collage."
   },
   "outputs": [
-    "public/assets/images/home/shops/decor-khaneh.webp",
+    "public/assets/images/home/shops/decor-khaneh-optimized.webp",
     "public/assets/images/home/shops/techno-center.webp",
-    "public/assets/images/home/shops/sport-zone.webp",
-    "public/assets/images/home/shops/nava-coffee.webp",
+    "public/assets/images/home/shops/sport-zone-optimized.webp",
+    "public/assets/images/home/shops/nava-coffee-optimized.webp",
     "public/assets/images/home/shops/rouge.webp",
-    "public/assets/images/home/shops/ava.webp",
-    "public/assets/images/home/shops/loom.webp",
-    "public/assets/images/home/shops/zamano.webp",
+    "public/assets/images/home/shops/ava-optimized.webp",
+    "public/assets/images/home/shops/loom-optimized.webp",
+    "public/assets/images/home/shops/zamano-optimized.webp",
     "public/assets/images/home/shops/rahro.webp"
   ]
 }

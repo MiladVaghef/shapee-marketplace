@@ -54,12 +54,12 @@ export const topShops: FeaturedStore[] = [
     category: "گوشی و لوازم جانبی",
     city: "شیراز",
     rating: "۴٫۶",
-    cover: example + "iphone-banner.jpg",
+    cover: example + "iphone-banner-optimized-2.webp",
     logo: "/assets/images/home/logos/mobile-seven.svg",
     badge: "منتخب دیجیتال",
     count: "۱۵۲",
     products: [
-      example + "black-iphone.jpg",
+      example + "black-iphone-optimized-2.webp",
       example + "iPhone-16-Concept-R1.png",
       studio + "studio-watch.webp",
     ],
@@ -86,7 +86,7 @@ export const topShops: FeaturedStore[] = [
     category: "دکوراسیون و چیدمان",
     city: "مشهد",
     rating: "۴٫۸",
-    cover: home + "shops/decor-khaneh.webp",
+    cover: home + "shops/decor-khaneh-optimized.webp",
     logo: "/assets/images/home/logos/decor-khaneh.svg",
     badge: "خانه‌ای متفاوت",
     count: "۸۶",
@@ -109,7 +109,7 @@ export const topShops: FeaturedStore[] = [
     products: [
       studio + "studio-headphones.webp",
       studio + "studio-controller.webp",
-      example + "headset.jpg",
+      example + "headset.webp",
     ],
   },
   {
@@ -118,7 +118,7 @@ export const topShops: FeaturedStore[] = [
     category: "پوشاک و تجهیزات روزمره",
     city: "کرج",
     rating: "۴٫۷",
-    cover: home + "shops/sport-zone.webp",
+    cover: home + "shops/sport-zone-optimized.webp",
     logo: "/assets/images/home/logos/sport-zone.svg",
     badge: "همراه حرکت",
     count: "۱۰۴",
@@ -137,7 +137,7 @@ export const topBrands: FeaturedStore[] = [
     category: "قهوه تخصصی",
     city: "تبریز",
     rating: "۴٫۹",
-    cover: home + "shops/nava-coffee.webp",
+    cover: home + "shops/nava-coffee-optimized.webp",
     logo: "/assets/images/home/logos/nava-coffee.svg",
     badge: "رُست تازه",
     description:
@@ -161,7 +161,7 @@ export const topBrands: FeaturedStore[] = [
     category: "هدفون و تجهیزات صوتی",
     city: "شیراز",
     rating: "۴٫۷",
-    cover: home + "shops/ava.webp",
+    cover: home + "shops/ava-optimized.webp",
     logo: "/assets/images/home/logos/ava.svg",
     badge: "صدای شفاف",
     description:
@@ -173,7 +173,7 @@ export const topBrands: FeaturedStore[] = [
     category: "روشنایی و دکور",
     city: "اصفهان",
     rating: "۴٫۸",
-    cover: home + "shops/loom.webp",
+    cover: home + "shops/loom-optimized.webp",
     logo: "/assets/images/home/logos/loom.svg",
     badge: "طراحی مینیمال",
     description:
@@ -185,7 +185,7 @@ export const topBrands: FeaturedStore[] = [
     category: "ساعت و ابزار هوشمند",
     city: "مشهد",
     rating: "۴٫۶",
-    cover: home + "shops/zamano.webp",
+    cover: home + "shops/zamano-optimized.webp",
     logo: "/assets/images/home/logos/zamano.svg",
     badge: "همراه هوشمند",
     description:

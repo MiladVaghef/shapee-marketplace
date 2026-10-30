@@ -1,6 +1,6 @@
 # Soft social preview
 
-Active cover: `src/app/opengraph-image.png`. Created with the built-in image-generation tool from the actual desktop and mobile screenshots in `docs/screenshots/social-reference-desktop.png` and `docs/screenshots/social-reference-mobile.png`, plus `public/assets/logo/shapee.png`.
+Active cover: `src/app/opengraph-image.png`. Created with the built-in image-generation tool from the actual desktop and mobile screenshots in `docs/screenshots/social-reference-desktop.png` and `docs/screenshots/social-reference-mobile.png`, plus `public/assets/logo/shapee-optimized-2.webp`.
 
 ## Final prompt
 

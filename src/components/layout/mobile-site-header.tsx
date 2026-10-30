@@ -21,7 +21,7 @@ export function MobileSiteHeader() {
               </span>
 
               <img
-                src="/assets/logo/shapee.png"
+                src="/assets/logo/shapee-optimized-2.webp"
                 alt="لوگو شاپی"
                 className="w-8 mb-1"
               />

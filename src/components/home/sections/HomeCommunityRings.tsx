@@ -13,7 +13,7 @@ export function HomeCommunityRings() {
                   className="font-peyda flex column justify-content-center align-items-center"
                 >
                   <div className="avatar-ring relative w-14 h-14 md-w-10 md-h-10 round-full">
-                    <img
+                    <img decoding="async" loading="lazy"
                       className="w-20 round-full"
                       src="/assets/logo/panter.jpg"
                       alt="avatar"
@@ -30,7 +30,7 @@ export function HomeCommunityRings() {
                   className="font-peyda flex column justify-content-center align-items-center"
                 >
                   <div className="avatar-ring relative w-14 h-14 md-w-10 md-h-10 round-full">
-                    <img
+                    <img decoding="async" loading="lazy"
                       className="w-20 round-full"
                       src="/assets/logo/snapp.png"
                       alt="avatar"
@@ -47,7 +47,7 @@ export function HomeCommunityRings() {
                   className="font-peyda flex column justify-content-center align-items-center"
                 >
                   <div className="avatar-ring relative w-14 h-14 md-w-10 md-h-10 round-full">
-                    <img
+                    <img decoding="async" loading="lazy"
                       className="w-20 round-full"
                       src="/assets/logo/irancell.jpg"
                       alt="avatar"
@@ -64,7 +64,7 @@ export function HomeCommunityRings() {
                   className="font-peyda flex column justify-content-center align-items-center"
                 >
                   <div className="avatar-ring relative w-14 h-14 md-w-10 md-h-10 round-full">
-                    <img
+                    <img decoding="async" loading="lazy"
                       className="w-20 round-full"
                       src="/assets/logo/coffee.jpg"
                       alt="avatar"
@@ -83,7 +83,7 @@ export function HomeCommunityRings() {
                   className="font-peyda flex column justify-content-center align-items-center"
                 >
                   <div className="avatar-ring relative w-14 h-14 md-w-10 md-h-10 round-full">
-                    <img
+                    <img decoding="async" loading="lazy"
                       className="w-20 round-full"
                       src="/assets/logo/digikala.jpg"
                       alt="avatar"
@@ -102,7 +102,7 @@ export function HomeCommunityRings() {
                   className="font-peyda flex column justify-content-center align-items-center"
                 >
                   <div className="avatar-ring relative w-14 h-14 md-w-10 md-h-10 round-full">
-                    <img
+                    <img decoding="async" loading="lazy"
                       className="w-20 round-full"
                       src="/assets/logo/toranji.jpg"
                       alt="avatar"
@@ -119,7 +119,7 @@ export function HomeCommunityRings() {
                   className="font-peyda flex column justify-content-center align-items-center"
                 >
                   <div className="avatar-ring relative w-14 h-14 md-w-10 md-h-10 round-full">
-                    <img
+                    <img decoding="async" loading="lazy"
                       className="w-20 round-full"
                       src="/assets/logo/myket.jpg"
                       alt="avatar"
@@ -136,7 +136,7 @@ export function HomeCommunityRings() {
                   className="font-peyda flex column justify-content-center align-items-center"
                 >
                   <div className="avatar-ring relative w-14 h-14 md-w-10 md-h-10 round-full">
-                    <img
+                    <img decoding="async" loading="lazy"
                       className="w-20 round-full"
                       src="/assets/logo/steak-bbq.jpg"
                       alt="avatar"
@@ -155,7 +155,7 @@ export function HomeCommunityRings() {
                   className="font-peyda flex column justify-content-center align-items-center"
                 >
                   <div className="avatar-ring relative w-14 h-14 md-w-10 md-h-10 round-full">
-                    <img
+                    <img decoding="async" loading="lazy"
                       className="w-20 round-full"
                       src="/assets/logo/abr-arvan.jpeg"
                       alt="avatar"

@@ -63,7 +63,7 @@ export function AccountShell({ children }: { children: ReactNode }) {
               href="/profile/user-profile"
               className="flex align-items-center gap-3"
             >
-              <img
+              <img decoding="async" loading="lazy"
                 src="/assets/images/example/profile-picture.jpg"
                 alt="تصویر حساب کاربری"
                 className="w-6 h-6 round-full"

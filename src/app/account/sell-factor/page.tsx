@@ -52,7 +52,7 @@ export default function Page() {
                     <>
                       <div className="flex justify-content-between align-items-center gap-5 py-5">
                         <div className="flex gap-4 align-items-center full-width pr-4">
-                          <img
+                          <img decoding="async" loading="lazy"
                             src="/assets/images/example/headphone.jpg"
                             alt=""
                             className="w-10 h-10 round-md object-cover flex-shrink-0"
@@ -190,7 +190,7 @@ export default function Page() {
                     <>
                       <div className="flex justify-content-between align-items-center gap-5 py-5">
                         <div className="flex gap-4 align-items-center full-width pr-4">
-                          <img
+                          <img decoding="async" loading="lazy"
                             src="/assets/images/example/iPhone-16-Concept-R1.png"
                             alt=""
                             className="w-10 h-10 round-md object-cover flex-shrink-0"
@@ -328,7 +328,7 @@ export default function Page() {
                     <>
                       <div className="flex justify-content-between align-items-center gap-5 py-5">
                         <div className="flex gap-4 align-items-center full-width pr-4">
-                          <img
+                          <img decoding="async" loading="lazy"
                             src="/assets/images/example/headphone.jpg"
                             alt=""
                             className="w-10 h-10 round-md object-cover flex-shrink-0"
@@ -466,7 +466,7 @@ export default function Page() {
                     <>
                       <div className="flex justify-content-between align-items-center gap-5 py-5">
                         <div className="flex gap-4 align-items-center full-width pr-4">
-                          <img
+                          <img decoding="async" loading="lazy"
                             src="/assets/images/example/iPhone-16-Concept-R1.png"
                             alt=""
                             className="w-10 h-10 round-md object-cover flex-shrink-0"
@@ -604,7 +604,7 @@ export default function Page() {
                     <>
                       <div className="flex justify-content-between align-items-center gap-5 py-5">
                         <div className="flex gap-4 align-items-center full-width pr-4">
-                          <img
+                          <img decoding="async" loading="lazy"
                             src="/assets/images/example/headphone.jpg"
                             alt=""
                             className="w-10 h-10 round-md object-cover flex-shrink-0"
@@ -742,7 +742,7 @@ export default function Page() {
                     <>
                       <div className="flex justify-content-between align-items-center gap-5 py-5">
                         <div className="flex gap-4 align-items-center full-width pr-4">
-                          <img
+                          <img decoding="async" loading="lazy"
                             src="/assets/images/example/iPhone-16-Concept-R1.png"
                             alt=""
                             className="w-10 h-10 round-md object-cover flex-shrink-0"

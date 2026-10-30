@@ -12,7 +12,7 @@ export function LoginForm() {
         router.push("/account/dashboard");
       }}
     >
-      <img src="/assets/logo/shapee.png" alt="لوگو شاپی" className="w-8" />
+      <img src="/assets/logo/shapee-optimized-2.webp" alt="لوگو شاپی" className="w-8" />
       <h1 className="mb-4 mt-1 text-xl">ورود به حساب کاربری</h1>
       <div className="flex row gap-3 mb-10">
         <button

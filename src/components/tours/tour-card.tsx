@@ -7,7 +7,7 @@ export function TourCard({ tour }: { tour: Tour }) {
       className="flex column round-md overflow-hidden md-mr-3 md-ml-3"
     >
       <div>
-        <img
+        <img decoding="async" loading="lazy"
           src={tour.image}
           alt={tour.title}
           className="full-width round-lg"

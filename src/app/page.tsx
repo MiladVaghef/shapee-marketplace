@@ -123,7 +123,7 @@ export default function Page() {
 
                   <div className="flex row gap-5 full-height">
                     <div className="flex fill justify-content-center align-items-center p-1 bg-background round-sm">
-                      <img
+                      <img decoding="async" loading="lazy"
                         src="/assets/images/example/e-namad.webp"
                         className="max-w-7"
                         alt=""
@@ -131,7 +131,7 @@ export default function Page() {
                     </div>
 
                     <div className="flex fill justify-content-center align-items-center p-1 bg-background round-sm">
-                      <img
+                      <img decoding="async" loading="lazy"
                         src="/assets/images/example/samandahi.webp"
                         className="max-w-7"
                         alt=""
@@ -139,7 +139,7 @@ export default function Page() {
                     </div>
 
                     <div className="flex fill justify-content-center align-items-center p-1 bg-background round-sm">
-                      <img
+                      <img decoding="async" loading="lazy"
                         src="/assets/images/example/zarin-pal.png"
                         className="max-w-7"
                         alt=""

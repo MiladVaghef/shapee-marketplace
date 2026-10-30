@@ -29,7 +29,7 @@ export function ProfileHub() {
           </Link>
         </div>
         <Link href="/profile/user-profile" className="profile-hub-identity">
-          <img
+          <img decoding="async" loading="lazy"
             src="/assets/images/example/profile-picture.jpg"
             alt="علی محمدی"
           />

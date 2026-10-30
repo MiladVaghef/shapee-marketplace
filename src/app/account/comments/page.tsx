@@ -69,7 +69,7 @@ export default function Page() {
                 <div className="flex md-column gap-5 py-6 border-bottom">
                   <div className="flex column gap-4 align-items-start full-width">
                     <div className="flex row gap-4">
-                      <img
+                      <img decoding="async" loading="lazy"
                         src="https://placehold.co/48"
                         alt=""
                         className="w-6 h-6 round-full"
@@ -111,7 +111,7 @@ export default function Page() {
                   </div>
 
                   <div className="flex gap-4 align-items-center full-width">
-                    <img
+                    <img decoding="async" loading="lazy"
                       src="/assets/placeholders/60x60.svg"
                       alt=""
                       className="w-10 h-10 round-sm"
@@ -142,7 +142,7 @@ export default function Page() {
                 <div className="flex md-column gap-5 py-6 border-bottom">
                   <div className="flex column gap-4 align-items-start full-width">
                     <div className="flex row gap-4">
-                      <img
+                      <img decoding="async" loading="lazy"
                         src="https://placehold.co/48"
                         alt=""
                         className="w-6 h-6 round-full"
@@ -184,7 +184,7 @@ export default function Page() {
                   </div>
 
                   <div className="flex gap-4 align-items-center full-width">
-                    <img
+                    <img decoding="async" loading="lazy"
                       src="/assets/placeholders/60x60.svg"
                       alt=""
                       className="w-10 h-10 round-sm"
@@ -215,7 +215,7 @@ export default function Page() {
                 <div className="flex md-column gap-5 py-6 border-bottom">
                   <div className="flex column gap-4 align-items-start full-width">
                     <div className="flex row gap-4">
-                      <img
+                      <img decoding="async" loading="lazy"
                         src="https://placehold.co/48"
                         alt=""
                         className="w-6 h-6 round-full"
@@ -257,7 +257,7 @@ export default function Page() {
                   </div>
 
                   <div className="flex gap-4 align-items-center full-width">
-                    <img
+                    <img decoding="async" loading="lazy"
                       src="/assets/placeholders/60x60.svg"
                       alt=""
                       className="w-10 h-10 round-sm"
@@ -288,7 +288,7 @@ export default function Page() {
                 <div className="flex md-column gap-5 py-6 border-bottom">
                   <div className="flex column gap-4 align-items-start full-width">
                     <div className="flex row gap-4">
-                      <img
+                      <img decoding="async" loading="lazy"
                         src="https://placehold.co/48"
                         alt=""
                         className="w-6 h-6 round-full"
@@ -330,7 +330,7 @@ export default function Page() {
                   </div>
 
                   <div className="flex gap-4 align-items-center full-width">
-                    <img
+                    <img decoding="async" loading="lazy"
                       src="/assets/placeholders/60x60.svg"
                       alt=""
                       className="w-10 h-10 round-sm"
@@ -361,7 +361,7 @@ export default function Page() {
                 <div className="flex md-column gap-5 py-6 border-bottom">
                   <div className="flex column gap-4 align-items-start full-width">
                     <div className="flex row gap-4">
-                      <img
+                      <img decoding="async" loading="lazy"
                         src="https://placehold.co/48"
                         alt=""
                         className="w-6 h-6 round-full"
@@ -403,7 +403,7 @@ export default function Page() {
                   </div>
 
                   <div className="flex gap-4 align-items-center full-width">
-                    <img
+                    <img decoding="async" loading="lazy"
                       src="/assets/placeholders/60x60.svg"
                       alt=""
                       className="w-10 h-10 round-sm"
@@ -434,7 +434,7 @@ export default function Page() {
                 <div className="flex md-column gap-5 py-6 border-bottom">
                   <div className="flex column gap-4 align-items-start full-width">
                     <div className="flex row gap-4">
-                      <img
+                      <img decoding="async" loading="lazy"
                         src="https://placehold.co/48"
                         alt=""
                         className="w-6 h-6 round-full"
@@ -476,7 +476,7 @@ export default function Page() {
                   </div>
 
                   <div className="flex gap-4 align-items-center full-width">
-                    <img
+                    <img decoding="async" loading="lazy"
                       src="/assets/placeholders/60x60.svg"
                       alt=""
                       className="w-10 h-10 round-sm"

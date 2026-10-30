@@ -520,7 +520,7 @@ export function FlowUploads({
       <div className="flow-gallery">
         {urls.map((url, index) => (
           <div key={url}>
-            <img src={url} alt={files[index].name} />
+            <img decoding="async" loading="lazy" src={url} alt={files[index].name} />
             <button
               type="button"
               aria-label={`حذف تصویر ${fa(index + 1)}`}
@@ -559,7 +559,7 @@ export function FlowReview() {
       </dl>
       <div className="flow-gallery">
         {urls.map((url, index) => (
-          <img key={url} src={url} alt={`تصویر ${fa(index + 1)}`} />
+          <img decoding="async" loading="lazy" key={url} src={url} alt={`تصویر ${fa(index + 1)}`} />
         ))}
       </div>
     </div>
@@ -571,7 +571,7 @@ export function FlowPreview() {
     <aside className="flow-preview font-peyda">
       <div className="flow-preview-image">
         {urls[0] ? (
-          <img src={urls[0]} alt="پیش‌نمایش تصویر انتخاب‌شده" />
+          <img decoding="async" loading="lazy" src={urls[0]} alt="پیش‌نمایش تصویر انتخاب‌شده" />
         ) : (
           <i className="icon icon-image" aria-hidden="true" />
         )}
@@ -636,7 +636,7 @@ function BrandingImage({ label }: { label: string }) {
     <label className="flow-upload-box">
       <strong>{label}</strong>
       {url && (
-        <img
+        <img decoding="async" loading="lazy"
           src={url}
           alt={`پیش‌نمایش ${label}`}
           style={{ maxWidth: 180, maxHeight: 120, objectFit: "contain" }}

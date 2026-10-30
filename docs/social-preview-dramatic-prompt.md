@@ -1,6 +1,6 @@
 # Dramatic social preview
 
-Generated with the built-in image generation tool. Saved as `src/app/opengraph-image.png`, replacing the active social-sharing cover. Uses the actual desktop and mobile screenshots in `docs/screenshots/social-reference-desktop.png` and `docs/screenshots/social-reference-mobile.png`, plus `public/assets/logo/shapee.png`. This is a stylized marketing presentation of the site.
+Generated with the built-in image generation tool. Saved as `src/app/opengraph-image.png`, replacing the active social-sharing cover. Uses the actual desktop and mobile screenshots in `docs/screenshots/social-reference-desktop.png` and `docs/screenshots/social-reference-mobile.png`, plus `public/assets/logo/shapee-optimized-2.webp`. This is a stylized marketing presentation of the site.
 
 ## Final prompt
 

@@ -84,7 +84,7 @@ export default function Page() {
             <div id="search-results" className="flex column gap-5 round-md">
               <div className="search-results-product flex row gap-5 justify-content-between align-items-stretch full-width overflow-hidden">
                 <div className="flex">
-                  <img
+                  <img decoding="async" loading="lazy"
                     className="w-15 round-md"
                     src="/assets/images/example/Jaguar-F-Type.jpg"
                     alt="محصول"
@@ -118,7 +118,7 @@ export default function Page() {
 
               <div className="search-results-product flex row gap-5 justify-content-between align-items-stretch full-width overflow-hidden">
                 <div className="flex">
-                  <img
+                  <img decoding="async" loading="lazy"
                     className="w-15 round-md"
                     src="/assets/images/example/Jaguar-F-Type.jpg"
                     alt="محصول"
@@ -150,7 +150,7 @@ export default function Page() {
 
               <div className="search-results-product flex row gap-5 justify-content-between align-items-stretch full-width overflow-hidden">
                 <div className="flex">
-                  <img
+                  <img decoding="async" loading="lazy"
                     className="w-15 round-md"
                     src="/assets/images/example/Jaguar-F-Type.jpg"
                     alt="محصول"
@@ -182,7 +182,7 @@ export default function Page() {
 
               <div className="search-results-product flex row gap-5 justify-content-between align-items-stretch full-width overflow-hidden">
                 <div className="flex">
-                  <img
+                  <img decoding="async" loading="lazy"
                     className="w-15 round-md"
                     src="/assets/images/example/Jaguar-F-Type.jpg"
                     alt="محصول"
@@ -214,7 +214,7 @@ export default function Page() {
 
               <div className="search-results-product flex row gap-5 justify-content-between align-items-stretch full-width overflow-hidden">
                 <div className="flex">
-                  <img
+                  <img decoding="async" loading="lazy"
                     className="w-15 round-md"
                     src="/assets/images/example/Jaguar-F-Type.jpg"
                     alt="محصول"
@@ -351,7 +351,7 @@ export default function Page() {
               <div className="w-p5 lg-full-width lg-order-1">
                 <div className="form">
                   <div className="relative overflow-hidden round-md mb-4">
-                    <img
+                    <img decoding="async" loading="lazy"
                       src="/assets/images/example/digikala-banner.png"
                       className="full-width"
                       alt=""
@@ -363,7 +363,7 @@ export default function Page() {
                   </div>
 
                   <div className="flex align-items-center gap-4 mb-5">
-                    <img
+                    <img decoding="async" loading="lazy"
                       src="/assets/logo/digikala.jpg"
                       className="w-10 h-10 round-full"
                       alt=""
@@ -532,7 +532,7 @@ export default function Page() {
                 <div className="form">
                   <h3 className="bold mb-4">{"موقعیت مکانی"}</h3>
 
-                  <img
+                  <img decoding="async" loading="lazy"
                     src="/assets/placeholders/400x250.svg"
                     className="full-width round-md"
                     alt=""
@@ -578,7 +578,7 @@ export default function Page() {
                           <div className="flex column justify-content-center align-items-center pl-5 pr-5 index-1000">
                             <div className="flex column justify-content-center align-items-center gap-3 full-width pb-3">
                               <div className="shadow-md round-full mt-8 h-10 w-10 outline-white overflow-hidden">
-                                <img
+                                <img decoding="async" loading="lazy"
                                   src="/assets/logo/abr-arvan.jpeg"
                                   alt="لوگو فروشگاه"
                                   className="full-width full-height round-full block"
@@ -702,7 +702,7 @@ export default function Page() {
                           <div className="flex column justify-content-center align-items-center pl-5 pr-5 index-1000">
                             <div className="flex column justify-content-center align-items-center gap-3 full-width pb-3">
                               <div className="shadow-md round-full mt-8 h-10 w-10 outline-white overflow-hidden">
-                                <img
+                                <img decoding="async" loading="lazy"
                                   src="/assets/logo/abr-arvan.jpeg"
                                   alt="لوگو فروشگاه"
                                   className="full-width full-height round-full block"
@@ -826,7 +826,7 @@ export default function Page() {
                           <div className="flex column justify-content-center align-items-center pl-5 pr-5 index-1000">
                             <div className="flex column justify-content-center align-items-center gap-3 full-width pb-3">
                               <div className="shadow-md round-full mt-8 h-10 w-10 outline-white overflow-hidden">
-                                <img
+                                <img decoding="async" loading="lazy"
                                   src="/assets/logo/abr-arvan.jpeg"
                                   alt="لوگو فروشگاه"
                                   className="full-width full-height round-full block"
@@ -950,7 +950,7 @@ export default function Page() {
                           <div className="flex column justify-content-center align-items-center pl-5 pr-5 index-1000">
                             <div className="flex column justify-content-center align-items-center gap-3 full-width pb-3">
                               <div className="shadow-md round-full mt-8 h-10 w-10 outline-white overflow-hidden">
-                                <img
+                                <img decoding="async" loading="lazy"
                                   src="/assets/logo/abr-arvan.jpeg"
                                   alt="لوگو فروشگاه"
                                   className="full-width full-height round-full block"
@@ -1074,7 +1074,7 @@ export default function Page() {
                           <div className="flex column justify-content-center align-items-center pl-5 pr-5 index-1000">
                             <div className="flex column justify-content-center align-items-center gap-3 full-width pb-3">
                               <div className="shadow-md round-full mt-8 h-10 w-10 outline-white overflow-hidden">
-                                <img
+                                <img decoding="async" loading="lazy"
                                   src="/assets/logo/abr-arvan.jpeg"
                                   alt="لوگو فروشگاه"
                                   className="full-width full-height round-full block"

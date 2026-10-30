@@ -131,7 +131,7 @@ export function ChatInbox() {
               >
                 <div className="chat-item__content">
                   <div className="chat-item__avatar">
-                    <img src={item.image} alt="" />
+                    <img decoding="async" loading="lazy" src={item.image} alt="" />
                     <span className="chat-item__status chat-item__status--online" />
                   </div>
                   <div className="account-chat-item-body">
@@ -177,7 +177,7 @@ export function ChatInbox() {
                 <i className="icon icon-right-lg" aria-hidden="true" />
               </button>
               <div className="chat-room__avatar">
-                <img src={conversation.image} alt="" />
+                <img decoding="async" loading="lazy" src={conversation.image} alt="" />
                 <span className="chat-room__online" />
               </div>
               <div className="chat-room__user-info">
@@ -224,7 +224,7 @@ export function ChatInbox() {
                 className={`message message--${message.sent ? "sent" : "received"}`}
               >
                 {!message.sent && (
-                  <img
+                  <img decoding="async" loading="lazy"
                     src={conversation.image}
                     alt=""
                     className="message__avatar"
