@@ -61,7 +61,9 @@ export default function Page() {
                     className="form md-round-unset md-shadow-unset flex column md-row p-0 overflow-hidden hover-fade-in relative md-border-bottom md-pb-5 md-pt-5"
                   >
                     <div className="relative flex justify-content-center align-items-center md-max-w-17">
-                      <img decoding="async" loading="lazy"
+                      <img
+                        decoding="async"
+                        loading="lazy"
                         src="/assets/images/example/square-shoe-5.jpg"
                         alt="کفش روزمره بنددار مردانه"
                         className="full-width object-cover md-round-md"
@@ -109,7 +111,9 @@ export default function Page() {
                     className="form md-round-unset md-shadow-unset flex column md-row p-0 overflow-hidden hover-fade-in relative md-border-bottom md-pb-5 md-pt-5"
                   >
                     <div className="relative flex justify-content-center align-items-center md-max-w-17">
-                      <img decoding="async" loading="lazy"
+                      <img
+                        decoding="async"
+                        loading="lazy"
                         src="/assets/images/example/square-shoe-5.jpg"
                         alt="کفش روزمره بنددار مردانه"
                         className="full-width object-cover md-round-md"
@@ -157,7 +161,9 @@ export default function Page() {
                     className="form md-round-unset md-shadow-unset flex column md-row p-0 overflow-hidden hover-fade-in relative md-border-bottom md-pb-5 md-pt-5"
                   >
                     <div className="relative flex justify-content-center align-items-center md-max-w-17">
-                      <img decoding="async" loading="lazy"
+                      <img
+                        decoding="async"
+                        loading="lazy"
                         src="/assets/images/example/square-shoe-5.jpg"
                         alt="کفش روزمره بنددار مردانه"
                         className="full-width object-cover md-round-md"
@@ -205,7 +211,9 @@ export default function Page() {
                     className="form md-round-unset md-shadow-unset flex column md-row p-0 overflow-hidden hover-fade-in relative md-border-bottom md-pb-5 md-pt-5"
                   >
                     <div className="relative flex justify-content-center align-items-center md-max-w-17">
-                      <img decoding="async" loading="lazy"
+                      <img
+                        decoding="async"
+                        loading="lazy"
                         src="/assets/images/example/square-shoe-5.jpg"
                         alt="کفش روزمره بنددار مردانه"
                         className="full-width object-cover md-round-md"
@@ -253,7 +261,9 @@ export default function Page() {
                     className="form md-round-unset md-shadow-unset flex column md-row p-0 overflow-hidden hover-fade-in relative md-border-bottom md-pb-5 md-pt-5"
                   >
                     <div className="relative flex justify-content-center align-items-center md-max-w-17">
-                      <img decoding="async" loading="lazy"
+                      <img
+                        decoding="async"
+                        loading="lazy"
                         src="/assets/images/example/square-shoe-5.jpg"
                         alt="کفش روزمره بنددار مردانه"
                         className="full-width object-cover md-round-md"
@@ -301,7 +311,9 @@ export default function Page() {
                     className="form md-round-unset md-shadow-unset flex column md-row p-0 overflow-hidden hover-fade-in relative md-border-bottom md-pb-5 md-pt-5"
                   >
                     <div className="relative flex justify-content-center align-items-center md-max-w-17">
-                      <img decoding="async" loading="lazy"
+                      <img
+                        decoding="async"
+                        loading="lazy"
                         src="/assets/images/example/square-shoe-5.jpg"
                         alt="کفش روزمره بنددار مردانه"
                         className="full-width object-cover md-round-md"
@@ -349,7 +361,9 @@ export default function Page() {
                     className="form md-round-unset md-shadow-unset flex column md-row p-0 overflow-hidden hover-fade-in relative md-border-bottom md-pb-5 md-pt-5"
                   >
                     <div className="relative flex justify-content-center align-items-center md-max-w-17">
-                      <img decoding="async" loading="lazy"
+                      <img
+                        decoding="async"
+                        loading="lazy"
                         src="/assets/images/example/square-shoe-5.jpg"
                         alt="کفش روزمره بنددار مردانه"
                         className="full-width object-cover md-round-md"
@@ -397,7 +411,9 @@ export default function Page() {
                     className="form md-round-unset md-shadow-unset flex column md-row p-0 overflow-hidden hover-fade-in relative md-border-bottom md-pb-5 md-pt-5"
                   >
                     <div className="relative flex justify-content-center align-items-center md-max-w-17">
-                      <img decoding="async" loading="lazy"
+                      <img
+                        decoding="async"
+                        loading="lazy"
                         src="/assets/images/example/square-shoe-5.jpg"
                         alt="کفش روزمره بنددار مردانه"
                         className="full-width object-cover md-round-md"

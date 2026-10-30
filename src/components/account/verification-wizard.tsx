@@ -42,7 +42,12 @@ function DocumentPreview({ file }: { file: File | null }) {
     return () => URL.revokeObjectURL(next);
   }, [file]);
   return url ? (
-    <img decoding="async" loading="lazy" src={url} alt="پیش‌نمایش مدرک انتخاب‌شده" />
+    <img
+      decoding="async"
+      loading="lazy"
+      src={url}
+      alt="پیش‌نمایش مدرک انتخاب‌شده"
+    />
   ) : (
     <i className="icon icon-image" aria-hidden="true" />
   );

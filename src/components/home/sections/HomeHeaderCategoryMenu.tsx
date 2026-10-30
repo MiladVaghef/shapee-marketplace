@@ -49,7 +49,9 @@ export function HomeHeaderCategoryMenu() {
       >
         <a href="/inner-category/products-category" className="xl-remove">
           <div id="mega-menu-banner" className="flex">
-            <img decoding="async" loading="lazy"
+            <img
+              decoding="async"
+              loading="lazy"
               src="/assets/images/example/mega-menu-banner-optimized-2.webp"
               alt="بنر مگا منو"
             />

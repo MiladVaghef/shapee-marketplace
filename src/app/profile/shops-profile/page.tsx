@@ -93,7 +93,9 @@ export default async function Page({
             <div id="search-results" className="flex column gap-5 round-md">
               <div className="search-results-product flex row gap-5 justify-content-between align-items-stretch full-width overflow-hidden">
                 <div className="flex">
-                  <img decoding="async" loading="lazy"
+                  <img
+                    decoding="async"
+                    loading="lazy"
                     className="w-15 round-md"
                     src="/assets/images/example/Jaguar-F-Type.jpg"
                     alt="محصول"
@@ -127,7 +129,9 @@ export default async function Page({
 
               <div className="search-results-product flex row gap-5 justify-content-between align-items-stretch full-width overflow-hidden">
                 <div className="flex">
-                  <img decoding="async" loading="lazy"
+                  <img
+                    decoding="async"
+                    loading="lazy"
                     className="w-15 round-md"
                     src="/assets/images/example/Jaguar-F-Type.jpg"
                     alt="محصول"
@@ -159,7 +163,9 @@ export default async function Page({
 
               <div className="search-results-product flex row gap-5 justify-content-between align-items-stretch full-width overflow-hidden">
                 <div className="flex">
-                  <img decoding="async" loading="lazy"
+                  <img
+                    decoding="async"
+                    loading="lazy"
                     className="w-15 round-md"
                     src="/assets/images/example/Jaguar-F-Type.jpg"
                     alt="محصول"
@@ -191,7 +197,9 @@ export default async function Page({
 
               <div className="search-results-product flex row gap-5 justify-content-between align-items-stretch full-width overflow-hidden">
                 <div className="flex">
-                  <img decoding="async" loading="lazy"
+                  <img
+                    decoding="async"
+                    loading="lazy"
                     className="w-15 round-md"
                     src="/assets/images/example/Jaguar-F-Type.jpg"
                     alt="محصول"
@@ -223,7 +231,9 @@ export default async function Page({
 
               <div className="search-results-product flex row gap-5 justify-content-between align-items-stretch full-width overflow-hidden">
                 <div className="flex">
-                  <img decoding="async" loading="lazy"
+                  <img
+                    decoding="async"
+                    loading="lazy"
                     className="w-15 round-md"
                     src="/assets/images/example/Jaguar-F-Type.jpg"
                     alt="محصول"
@@ -260,7 +270,9 @@ export default async function Page({
           <div className="inline-space pt-8">
             <section className="form overflow-hidden p-0">
               <div className="relative h-p10">
-                <img decoding="async" loading="lazy"
+                <img
+                  decoding="async"
+                  loading="lazy"
                   src={store.cover}
                   alt=""
                   className="full-width full-height"
@@ -269,7 +281,9 @@ export default async function Page({
 
               <div className="flex md-column gap-5 p-6 relative">
                 <div className="flex justify-content-center absolute md-position-unset -top-10 right-10">
-                  <img decoding="async" loading="lazy"
+                  <img
+                    decoding="async"
+                    loading="lazy"
                     src={store.logo}
                     alt=""
                     className="w-15 h-15 sm-w-12 sm-h-12 round-lg shadow-md outline-white"
@@ -337,7 +351,9 @@ export default async function Page({
                         {" این فروشگاه"}
                       </p>
 
-                      <img decoding="async" loading="lazy"
+                      <img
+                        decoding="async"
+                        loading="lazy"
                         src="/assets/images/example/qr-code-transparent.png"
                         className="h-10 w-10"
                         alt=""
@@ -572,7 +588,9 @@ export default async function Page({
                           </div>
                         </div>
 
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/images/products/studio-headphones.webp"
                           alt="هدفون بی‌سیم گرافیتی"
                           className="block full-width scale-up"
@@ -635,7 +653,9 @@ export default async function Page({
                           </div>
                         </div>
 
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/images/products/studio-perfume.webp"
                           alt="ادو پرفیوم شیشه‌ای"
                           className="block full-width scale-up"
@@ -698,7 +718,9 @@ export default async function Page({
                           </div>
                         </div>
 
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/images/example/toy.avif"
                           alt="اسباب‌بازی عروسکی"
                           className="block full-width scale-up"
@@ -761,7 +783,9 @@ export default async function Page({
                           </div>
                         </div>
 
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/images/products/studio-controller.webp"
                           alt="دسته بازی بی‌سیم"
                           className="block full-width scale-up"
@@ -824,7 +848,9 @@ export default async function Page({
                           </div>
                         </div>
 
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/images/products/studio-tshirt.webp"
                           alt="تی‌شرت نخ پنبه کرم"
                           className="block full-width scale-up"
@@ -887,7 +913,9 @@ export default async function Page({
                           </div>
                         </div>
 
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/images/products/studio-vase.webp"
                           alt="گلدان سرامیکی دکوراتیو"
                           className="block full-width scale-up"
@@ -972,7 +1000,9 @@ export default async function Page({
                           </div>
                         </div>
 
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/images/products/studio-headphones.webp"
                           alt="هدفون بی‌سیم گرافیتی"
                           className="block full-width scale-up"
@@ -1035,7 +1065,9 @@ export default async function Page({
                           </div>
                         </div>
 
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/images/products/studio-perfume.webp"
                           alt="ادو پرفیوم شیشه‌ای"
                           className="block full-width scale-up"
@@ -1098,7 +1130,9 @@ export default async function Page({
                           </div>
                         </div>
 
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/images/example/toy.avif"
                           alt="اسباب‌بازی عروسکی"
                           className="block full-width scale-up"
@@ -1161,7 +1195,9 @@ export default async function Page({
                           </div>
                         </div>
 
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/images/products/studio-controller.webp"
                           alt="دسته بازی بی‌سیم"
                           className="block full-width scale-up"
@@ -1224,7 +1260,9 @@ export default async function Page({
                           </div>
                         </div>
 
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/images/products/studio-tshirt.webp"
                           alt="تی‌شرت نخ پنبه کرم"
                           className="block full-width scale-up"
@@ -1287,7 +1325,9 @@ export default async function Page({
                           </div>
                         </div>
 
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/images/products/studio-vase.webp"
                           alt="گلدان سرامیکی دکوراتیو"
                           className="block full-width scale-up"
@@ -1362,7 +1402,9 @@ export default async function Page({
                     <article className="light-border round-md p-4">
                       <div className="flex align-items-center justify-content-between mb-3">
                         <div className="flex align-items-center gap-3">
-                          <img decoding="async" loading="lazy"
+                          <img
+                            decoding="async"
+                            loading="lazy"
                             src="/assets/images/example/profile-picture.jpg"
                             alt=""
                             className="w-8 h-8 round-full"
@@ -1404,7 +1446,9 @@ export default async function Page({
                     <article className="light-border round-md p-4">
                       <div className="flex align-items-center justify-content-between mb-3">
                         <div className="flex align-items-center gap-3">
-                          <img decoding="async" loading="lazy"
+                          <img
+                            decoding="async"
+                            loading="lazy"
                             src="/assets/images/example/profile-picture.jpg"
                             alt=""
                             className="w-8 h-8 round-full"
@@ -1446,7 +1490,9 @@ export default async function Page({
                     <article className="light-border round-md p-4">
                       <div className="flex align-items-center justify-content-between mb-3">
                         <div className="flex align-items-center gap-3">
-                          <img decoding="async" loading="lazy"
+                          <img
+                            decoding="async"
+                            loading="lazy"
                             src="/assets/images/example/profile-picture.jpg"
                             alt=""
                             className="w-8 h-8 round-full"
@@ -1488,7 +1534,9 @@ export default async function Page({
                     <article className="light-border round-md p-4">
                       <div className="flex align-items-center justify-content-between mb-3">
                         <div className="flex align-items-center gap-3">
-                          <img decoding="async" loading="lazy"
+                          <img
+                            decoding="async"
+                            loading="lazy"
                             src="/assets/images/example/profile-picture.jpg"
                             alt=""
                             className="w-8 h-8 round-full"

@@ -38,7 +38,9 @@ export default function Page() {
               <div id="mega-menu" className="flex row index-2000">
                 <a href="#" className="xl-remove">
                   <div id="mega-menu-banner" className="flex">
-                    <img decoding="async" loading="lazy"
+                    <img
+                      decoding="async"
+                      loading="lazy"
                       src="/assets/images/example/mega-menu-banner-optimized-2.webp"
                       alt="بنر مگا منو"
                     />
@@ -528,7 +530,9 @@ export default function Page() {
                   >
                     <div className="search-results-product flex row gap-5 justify-content-between align-items-center full-width overflow-hidden">
                       <div className="flex">
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           className="w-15 round-md"
                           src="/assets/images/example/Jaguar-F-Type.jpg"
                           alt="محصول"
@@ -565,7 +569,9 @@ export default function Page() {
 
                     <div className="search-results-product flex row gap-5 justify-content-between align-items-center full-width overflow-hidden">
                       <div className="flex">
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           className="w-15 round-md"
                           src="/assets/images/example/Audi-TT-RS.jpg"
                           alt="محصول"
@@ -789,7 +795,9 @@ export default function Page() {
                           <i className="icon icon-heart-angle text-primary w-3 h-3 pointer"></i>
                         </div>
 
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/images/example/bmw-car.jpg"
                           alt="کلینیک زیبایی"
                           className="full-width round-md"
@@ -874,7 +882,9 @@ export default function Page() {
                           <i className="icon icon-heart-angle text-primary w-3 h-3 pointer"></i>
                         </div>
 
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/images/example/bmw-car.jpg"
                           alt="کلینیک زیبایی"
                           className="full-width round-md"
@@ -959,7 +969,9 @@ export default function Page() {
                           <i className="icon icon-heart-angle text-primary w-3 h-3 pointer"></i>
                         </div>
 
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/images/example/bmw-car.jpg"
                           alt="کلینیک زیبایی"
                           className="full-width round-md"
@@ -1044,7 +1056,9 @@ export default function Page() {
                           <i className="icon icon-heart-angle text-primary w-3 h-3 pointer"></i>
                         </div>
 
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/images/example/bmw-car.jpg"
                           alt="کلینیک زیبایی"
                           className="full-width round-md"
@@ -1129,7 +1143,9 @@ export default function Page() {
                           <i className="icon icon-heart-angle text-primary w-3 h-3 pointer"></i>
                         </div>
 
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/images/example/bmw-car.jpg"
                           alt="کلینیک زیبایی"
                           className="full-width round-md"
@@ -1214,7 +1230,9 @@ export default function Page() {
                           <i className="icon icon-heart-angle text-primary w-3 h-3 pointer"></i>
                         </div>
 
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/images/example/bmw-car.jpg"
                           alt="کلینیک زیبایی"
                           className="full-width round-md"
@@ -1299,7 +1317,9 @@ export default function Page() {
                           <i className="icon icon-heart-angle text-primary w-3 h-3 pointer"></i>
                         </div>
 
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/images/example/bmw-car.jpg"
                           alt="کلینیک زیبایی"
                           className="full-width round-md"
@@ -1405,7 +1425,9 @@ export default function Page() {
                       className="flex column light-border round-md overflow-hidden"
                     >
                       <div>
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/images/example/house.jpeg"
                           alt="کلینیک زیبایی"
                           className="full-width"
@@ -1438,7 +1460,9 @@ export default function Page() {
                       className="flex column light-border round-md overflow-hidden"
                     >
                       <div>
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/images/example/house.jpeg"
                           alt="کلینیک زیبایی"
                           className="full-width"
@@ -1471,7 +1495,9 @@ export default function Page() {
                       className="flex column light-border round-md overflow-hidden"
                     >
                       <div>
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/images/example/house.jpeg"
                           alt="کلینیک زیبایی"
                           className="full-width"
@@ -1504,7 +1530,9 @@ export default function Page() {
                       className="flex column light-border round-md overflow-hidden"
                     >
                       <div>
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/images/example/house.jpeg"
                           alt="کلینیک زیبایی"
                           className="full-width"
@@ -1537,7 +1565,9 @@ export default function Page() {
                       className="flex column light-border round-md overflow-hidden"
                     >
                       <div>
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/images/example/house.jpeg"
                           alt="کلینیک زیبایی"
                           className="full-width"
@@ -1570,7 +1600,9 @@ export default function Page() {
                       className="flex column light-border round-md overflow-hidden"
                     >
                       <div>
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/images/example/house.jpeg"
                           alt="کلینیک زیبایی"
                           className="full-width"
@@ -1625,7 +1657,9 @@ export default function Page() {
                       className="flex column light-border round-md overflow-hidden font-sans"
                     >
                       <div>
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/images/example/beauty-clinic.jpg"
                           alt="کلینیک زیبایی"
                           className="full-width"
@@ -1693,7 +1727,9 @@ export default function Page() {
                       className="flex column light-border round-md overflow-hidden font-sans"
                     >
                       <div>
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/images/example/beauty-clinic.jpg"
                           alt="کلینیک زیبایی"
                           className="full-width"
@@ -1761,7 +1797,9 @@ export default function Page() {
                       className="flex column light-border round-md overflow-hidden font-sans"
                     >
                       <div>
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/images/example/beauty-clinic.jpg"
                           alt="کلینیک زیبایی"
                           className="full-width"
@@ -1829,7 +1867,9 @@ export default function Page() {
                       className="flex column light-border round-md overflow-hidden font-sans"
                     >
                       <div>
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/images/example/beauty-clinic.jpg"
                           alt="کلینیک زیبایی"
                           className="full-width"
@@ -1897,7 +1937,9 @@ export default function Page() {
                       className="flex column light-border round-md overflow-hidden font-sans"
                     >
                       <div>
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/images/example/beauty-clinic.jpg"
                           alt="کلینیک زیبایی"
                           className="full-width"
@@ -2026,13 +2068,17 @@ export default function Page() {
                   </span>
 
                   <div className="flex row gap-3 mt-6 wrap">
-                    <img decoding="async" loading="lazy"
+                    <img
+                      decoding="async"
+                      loading="lazy"
                       className="w-15"
                       src="/assets/images/buttons/google-play-download.png"
                       alt="لینک گوگل پلی"
                     />
 
-                    <img decoding="async" loading="lazy"
+                    <img
+                      decoding="async"
+                      loading="lazy"
                       className="w-15"
                       src="/assets/images/buttons/app-store-download.webp"
                       alt="لینک اپ استور"

@@ -18,7 +18,8 @@ export function FeaturedStores({ kind }: { kind: "shops" | "brands" }) {
             >
               <div className="home-store-cover relative overflow-hidden">
                 <span className="home-store-badge text-xs">{store.badge}</span>
-                <img decoding="async"
+                <img
+                  decoding="async"
                   src={store.cover}
                   alt={`${store.name}؛ ${store.category}`}
                   className="full-width scale-up"
@@ -26,7 +27,8 @@ export function FeaturedStores({ kind }: { kind: "shops" | "brands" }) {
                 />
               </div>
               <div className="home-store-identity">
-                <img decoding="async"
+                <img
+                  decoding="async"
                   className="home-store-mark"
                   src={store.logo}
                   alt={`لوگوی ${store.name}`}
@@ -61,7 +63,8 @@ export function FeaturedStores({ kind }: { kind: "shops" | "brands" }) {
                   <span className="text-sm">محصولات منتخب</span>
                   <div>
                     {store.products.map((image, index) => (
-                      <img decoding="async"
+                      <img
+                        decoding="async"
                         key={index}
                         src={image}
                         alt={`محصول منتخب ${store.name}`}

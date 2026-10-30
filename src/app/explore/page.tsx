@@ -10,7 +10,11 @@ export default function ExplorePage() {
     <main className="project-explorer" dir="ltr">
       <header>
         <Link href="/" className="project-brand">
-          <img src="/assets/logo/shapee-optimized-2.webp" alt="Shapee" width="130" />
+          <img
+            src="/assets/logo/shapee-optimized-2.webp"
+            alt="Shapee"
+            width="130"
+          />
         </Link>
         <span className="project-eyebrow">
           NEXT.JS · REACT · TYPESCRIPT · SCSS

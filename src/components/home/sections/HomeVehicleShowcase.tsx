@@ -4,7 +4,9 @@ export function HomeVehicleShowcase() {
   return (
     <div className="inline-space md-p-0">
       <div className="flex column product-showcase justify-content-center round-lg md-mr-3 md-ml-3">
-        <img decoding="async" loading="lazy"
+        <img
+          decoding="async"
+          loading="lazy"
           src="/assets/images/example/suv-banner-with-shadow.webp"
           alt="بنر ماشین های لوکس"
         />
@@ -24,14 +26,18 @@ export function HomeVehicleShowcase() {
                   </div>
 
                   <div className="absolute bottom-5 left-3 pt-1 pb-1 pl-3 pr-3 h-2 bg-background round-sm flex justify-content-center align-items-center index-1000 w-8">
-                    <img decoding="async" loading="lazy"
+                    <img
+                      decoding="async"
+                      loading="lazy"
                       src="/assets/images/example/kia-logo.png"
                       className="full-width h-fit"
                       alt=""
                     />
                   </div>
 
-                  <img decoding="async" loading="lazy"
+                  <img
+                    decoding="async"
+                    loading="lazy"
                     src="/assets/images/example/kia-stinger-silver.webp"
                     alt="کیا استینگر مدل 2026"
                     className="full-width scale-up"
@@ -42,7 +48,9 @@ export function HomeVehicleShowcase() {
                   <div className="flex column gap-3 full-width pb-3 border-bottom mb-1">
                     <div className="flex row align-items-center gap-3 mt-2">
                       <div className="shadow-md round-full h-7 w-7 outline-white overflow-hidden">
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/images/example/shoe-logo.avif"
                           alt="لوگو فروشگاه"
                           className="full-width full-height round-full block"
@@ -168,14 +176,18 @@ export function HomeVehicleShowcase() {
                   </div>
 
                   <div className="absolute bottom-5 left-3 pt-1 pb-1 pl-3 pr-3 h-2 bg-background round-sm flex justify-content-center align-items-center index-1000 w-8">
-                    <img decoding="async" loading="lazy"
+                    <img
+                      decoding="async"
+                      loading="lazy"
                       src="/assets/images/example/hyundai-logo-wide.png"
                       className="full-width h-fit"
                       alt=""
                     />
                   </div>
 
-                  <img decoding="async" loading="lazy"
+                  <img
+                    decoding="async"
+                    loading="lazy"
                     src="/assets/images/example/suv-driving-trough-road.jpg"
                     alt="سانتافه تمیز مدل 2023"
                     className="full-width scale-up"
@@ -186,7 +198,9 @@ export function HomeVehicleShowcase() {
                   <div className="flex column gap-3 full-width pb-3 border-bottom mb-1">
                     <div className="flex row align-items-center gap-3 mt-2">
                       <div className="shadow-md round-full h-7 w-7 outline-white overflow-hidden">
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/images/example/shoe-logo.avif"
                           alt="لوگو فروشگاه"
                           className="full-width full-height round-full block"
@@ -312,14 +326,18 @@ export function HomeVehicleShowcase() {
                   </div>
 
                   <div className="absolute bottom-5 left-3 pt-1 pb-1 pl-3 pr-3 h-2 bg-background round-sm flex justify-content-center align-items-center index-1000 w-8">
-                    <img decoding="async" loading="lazy"
+                    <img
+                      decoding="async"
+                      loading="lazy"
                       src="/assets/images/example/Hongqi-Logo.png"
                       className="full-width full-height"
                       alt=""
                     />
                   </div>
 
-                  <img decoding="async" loading="lazy"
+                  <img
+                    decoding="async"
+                    loading="lazy"
                     src="/assets/images/example/suv-LS7-8.webp"
                     alt="هونگچی LS7 مدل 2025"
                     className="full-width scale-up"
@@ -330,7 +348,9 @@ export function HomeVehicleShowcase() {
                   <div className="flex column gap-3 full-width pb-3 border-bottom mb-1">
                     <div className="flex row align-items-center gap-3 mt-2">
                       <div className="shadow-md round-full h-7 w-7 outline-white overflow-hidden">
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/images/example/shoe-logo.avif"
                           alt="لوگو فروشگاه"
                           className="full-width full-height round-full block"
@@ -456,14 +476,18 @@ export function HomeVehicleShowcase() {
                   </div>
 
                   <div className="absolute bottom-5 left-3 pt-1 pb-1 pl-3 pr-3 h-2 bg-background round-sm flex justify-content-center align-items-center index-1000 w-8">
-                    <img decoding="async" loading="lazy"
+                    <img
+                      decoding="async"
+                      loading="lazy"
                       src="/assets/images/example/BMW.png"
                       className="full-width full-height"
                       alt=""
                     />
                   </div>
 
-                  <img decoding="async" loading="lazy"
+                  <img
+                    decoding="async"
+                    loading="lazy"
                     src="/assets/images/example/bmw-m5-yellow.webp"
                     alt="بی ام و M5 برقی مدل 2022"
                     className="full-width scale-up"
@@ -474,7 +498,9 @@ export function HomeVehicleShowcase() {
                   <div className="flex column gap-3 full-width pb-3 border-bottom mb-1">
                     <div className="flex row align-items-center gap-3 mt-2">
                       <div className="shadow-md round-full h-7 w-7 outline-white overflow-hidden">
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/images/example/shoe-logo.avif"
                           alt="لوگو فروشگاه"
                           className="full-width full-height round-full block"
@@ -600,14 +626,18 @@ export function HomeVehicleShowcase() {
                   </div>
 
                   <div className="absolute bottom-5 left-3 pt-1 pb-1 pl-3 pr-3 h-2 bg-background round-sm flex justify-content-center align-items-center index-1000 w-8">
-                    <img decoding="async" loading="lazy"
+                    <img
+                      decoding="async"
+                      loading="lazy"
                       src="/assets/images/example/Aston-Martin-Logo.webp"
                       className="full-width full-height"
                       alt=""
                     />
                   </div>
 
-                  <img decoding="async" loading="lazy"
+                  <img
+                    decoding="async"
+                    loading="lazy"
                     src="/assets/images/example/grand-touring-red-optimized.webp"
                     alt="استون مارتین مدل 2020"
                     className="full-width scale-up"
@@ -618,7 +648,9 @@ export function HomeVehicleShowcase() {
                   <div className="flex column gap-3 full-width pb-3 border-bottom mb-1">
                     <div className="flex row align-items-center gap-3 mt-2">
                       <div className="shadow-md round-full h-7 w-7 outline-white overflow-hidden">
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/images/example/shoe-logo.avif"
                           alt="لوگو فروشگاه"
                           className="full-width full-height round-full block"

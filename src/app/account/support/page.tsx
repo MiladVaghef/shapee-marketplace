@@ -366,7 +366,9 @@ export default function Page() {
 
             <div className="form mt-5 bg-primary-light overflow-hidden md-mb-10">
               <div className="flex lg-column justify-content-between align-items-center p-6">
-                <img decoding="async" loading="lazy"
+                <img
+                  decoding="async"
+                  loading="lazy"
                   src="/assets/images/example/pink-headphone.webp"
                   alt=""
                   className="w-18 lg-mb-5"

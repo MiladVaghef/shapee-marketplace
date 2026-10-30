@@ -6,7 +6,8 @@ export function ProductCard({ product }: { product: Product }) {
   return (
     <Link href={`/products/${product.slug}`} className="catalog-product-card">
       <div className="catalog-product-image">
-        <img loading="lazy"
+        <img
+          loading="lazy"
           src={product.image}
           alt={product.title}
           decoding="async"

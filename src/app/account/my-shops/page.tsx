@@ -150,7 +150,9 @@ export default function Page() {
                   <div className="flex md-justify-content-between row full-width">
                     <div className="flex row align-items-center gap-3">
                       <div className="flex column justify-content-center align-items-center relative">
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/logo/defigo.jpg"
                           alt=""
                           className="w-14 h-14 xs-w-11 xs-h-11 round-full"
@@ -239,7 +241,9 @@ export default function Page() {
                   <div className="flex md-justify-content-between row full-width">
                     <div className="flex row align-items-center gap-3">
                       <div className="flex column justify-content-center align-items-center relative">
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/logo/iphone-logo.jpg"
                           alt=""
                           className="w-14 h-14 xs-w-11 xs-h-11 round-full"
@@ -328,7 +332,9 @@ export default function Page() {
                   <div className="flex md-justify-content-between row full-width">
                     <div className="flex row align-items-center gap-3">
                       <div className="flex column justify-content-center align-items-center relative">
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/logo/steak-bbq.jpg"
                           alt=""
                           className="w-14 h-14 xs-w-11 xs-h-11 round-full"
@@ -417,7 +423,9 @@ export default function Page() {
                   <div className="flex md-justify-content-between row full-width">
                     <div className="flex row align-items-center gap-3">
                       <div className="flex column justify-content-center align-items-center relative">
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/logo/coffee.jpg"
                           alt=""
                           className="w-14 h-14 xs-w-11 xs-h-11 round-full"
@@ -506,7 +514,9 @@ export default function Page() {
                   <div className="flex md-justify-content-between row full-width">
                     <div className="flex row align-items-center gap-3">
                       <div className="flex column justify-content-center align-items-center relative">
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/logo/panter.jpg"
                           alt=""
                           className="w-14 h-14 xs-w-11 xs-h-11 round-full"

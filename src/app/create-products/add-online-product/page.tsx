@@ -90,7 +90,9 @@ export default function Page() {
             <div id="search-results" className="flex column gap-5 round-md">
               <div className="search-results-product flex row gap-5 justify-content-between align-items-stretch full-width overflow-hidden">
                 <div className="flex">
-                  <img decoding="async" loading="lazy"
+                  <img
+                    decoding="async"
+                    loading="lazy"
                     className="w-15 round-md"
                     src="/assets/images/example/Jaguar-F-Type.jpg"
                     alt="محصول"
@@ -124,7 +126,9 @@ export default function Page() {
 
               <div className="search-results-product flex row gap-5 justify-content-between align-items-stretch full-width overflow-hidden">
                 <div className="flex">
-                  <img decoding="async" loading="lazy"
+                  <img
+                    decoding="async"
+                    loading="lazy"
                     className="w-15 round-md"
                     src="/assets/images/example/Jaguar-F-Type.jpg"
                     alt="محصول"
@@ -156,7 +160,9 @@ export default function Page() {
 
               <div className="search-results-product flex row gap-5 justify-content-between align-items-stretch full-width overflow-hidden">
                 <div className="flex">
-                  <img decoding="async" loading="lazy"
+                  <img
+                    decoding="async"
+                    loading="lazy"
                     className="w-15 round-md"
                     src="/assets/images/example/Jaguar-F-Type.jpg"
                     alt="محصول"
@@ -188,7 +194,9 @@ export default function Page() {
 
               <div className="search-results-product flex row gap-5 justify-content-between align-items-stretch full-width overflow-hidden">
                 <div className="flex">
-                  <img decoding="async" loading="lazy"
+                  <img
+                    decoding="async"
+                    loading="lazy"
                     className="w-15 round-md"
                     src="/assets/images/example/Jaguar-F-Type.jpg"
                     alt="محصول"
@@ -220,7 +228,9 @@ export default function Page() {
 
               <div className="search-results-product flex row gap-5 justify-content-between align-items-stretch full-width overflow-hidden">
                 <div className="flex">
-                  <img decoding="async" loading="lazy"
+                  <img
+                    decoding="async"
+                    loading="lazy"
                     className="w-15 round-md"
                     src="/assets/images/example/Jaguar-F-Type.jpg"
                     alt="محصول"
@@ -1346,13 +1356,17 @@ export default function Page() {
                   </span>
 
                   <div className="flex row gap-3 mt-6 wrap">
-                    <img decoding="async" loading="lazy"
+                    <img
+                      decoding="async"
+                      loading="lazy"
                       className="w-15"
                       src="/assets/images/buttons/google-play-download.png"
                       alt="لینک گوگل پلی"
                     />
 
-                    <img decoding="async" loading="lazy"
+                    <img
+                      decoding="async"
+                      loading="lazy"
                       className="w-15"
                       src="/assets/images/buttons/app-store-download.webp"
                       alt="لینک اپ استور"

@@ -79,7 +79,9 @@ export function ProductDetail({
                 href="/profile/user-profile"
                 className="flex align-items-center gap-3 product-seller-profile"
               >
-                <img decoding="async" loading="lazy"
+                <img
+                  decoding="async"
+                  loading="lazy"
                   src="/assets/images/example/profile-picture.jpg"
                   className="w-60px h-60px round-full"
                   alt="تصویر فروشنده"
@@ -211,7 +213,12 @@ export function ProductDetail({
                   href={`/products/${item.slug}`}
                   className="form flex column p-0 overflow-hidden product-related-card"
                 >
-                  <img decoding="async" loading="lazy" src={item.image} alt={item.title} />
+                  <img
+                    decoding="async"
+                    loading="lazy"
+                    src={item.image}
+                    alt={item.title}
+                  />
                   <div className="p-4">
                     <h3 className="semi-bold text-sm m-0 mb-3">{item.title}</h3>
                     <span className="text-primary text-sm">

@@ -4,7 +4,9 @@ export function HomeFeaturedBrands() {
   return (
     <div className="inline-space md-p-0">
       <div className="flex overflow-hidden round-md relative md-ml-4 md-mr-4">
-        <img decoding="async" loading="lazy"
+        <img
+          decoding="async"
+          loading="lazy"
           className="full-width"
           src="/assets/images/example/top-brand-banner.webp"
           alt="بنر کمپین طلایی"

@@ -18,7 +18,13 @@ export function DetailImage({
         aria-label={`بزرگ‌نمایی تصویر ${title}`}
         onClick={() => dialog.current?.showModal()}
       >
-        <img decoding="async" loading="lazy" src={image} alt={title} className="round-md" />
+        <img
+          decoding="async"
+          loading="lazy"
+          src={image}
+          alt={title}
+          className="round-md"
+        />
         <span className="product-image-hint font-peyda text-xs">
           <i className="icon icon-size-fullscreen" /> مشاهده تصویر
         </span>

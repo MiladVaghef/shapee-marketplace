@@ -20,7 +20,9 @@ export default function Page() {
 
                     <div className="flex sm-column justify-content-between gap-6">
                       <div className="flex align-items-center gap-5">
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/images/example/profile-picture.jpg"
                           alt=""
                           className="w-15 h-15 round-full object-cover"

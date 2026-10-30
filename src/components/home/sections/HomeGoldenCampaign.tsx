@@ -5,7 +5,9 @@ export function HomeGoldenCampaign() {
     <>
       <div className="md-bg-primary inline-space md-p-0 md-pb-4 md-pt-4">
         <div className="flex column overflow-hidden round-top-md relative md-remove">
-          <img decoding="async" loading="lazy"
+          <img
+            decoding="async"
+            loading="lazy"
             className="full-width"
             src="/assets/images/example/golden-campaign-optimized-2.webp"
             alt="بنر کمپین طلایی"
@@ -88,7 +90,9 @@ export function HomeGoldenCampaign() {
                     </div>
                   </div>
 
-                  <img decoding="async" loading="lazy"
+                  <img
+                    decoding="async"
+                    loading="lazy"
                     src="/assets/images/products/studio-headphones.webp"
                     alt="هدفون بی‌سیم گرافیتی"
                     className="block full-width scale-up"
@@ -145,7 +149,9 @@ export function HomeGoldenCampaign() {
                     </div>
                   </div>
 
-                  <img decoding="async" loading="lazy"
+                  <img
+                    decoding="async"
+                    loading="lazy"
                     src="/assets/images/products/studio-perfume.webp"
                     alt="ادو پرفیوم شیشه‌ای"
                     className="block full-width scale-up"
@@ -202,7 +208,9 @@ export function HomeGoldenCampaign() {
                     </div>
                   </div>
 
-                  <img decoding="async" loading="lazy"
+                  <img
+                    decoding="async"
+                    loading="lazy"
                     src="/assets/images/products/studio-watch.webp"
                     alt="ساعت هوشمند گرافیتی"
                     className="block full-width scale-up"
@@ -259,7 +267,9 @@ export function HomeGoldenCampaign() {
                     </div>
                   </div>
 
-                  <img decoding="async" loading="lazy"
+                  <img
+                    decoding="async"
+                    loading="lazy"
                     src="/assets/images/products/studio-controller.webp"
                     alt="دسته بازی بی‌سیم"
                     className="block full-width scale-up"
@@ -316,7 +326,9 @@ export function HomeGoldenCampaign() {
                     </div>
                   </div>
 
-                  <img decoding="async" loading="lazy"
+                  <img
+                    decoding="async"
+                    loading="lazy"
                     src="/assets/images/products/studio-tshirt.webp"
                     alt="تی‌شرت نخ پنبه کرم"
                     className="block full-width scale-up"
@@ -373,7 +385,9 @@ export function HomeGoldenCampaign() {
                     </div>
                   </div>
 
-                  <img decoding="async" loading="lazy"
+                  <img
+                    decoding="async"
+                    loading="lazy"
                     src="/assets/images/products/studio-vase.webp"
                     alt="گلدان سرامیکی دکوراتیو"
                     className="block full-width scale-up"

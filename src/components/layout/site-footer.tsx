@@ -15,13 +15,17 @@ export function SiteFooter() {
                 </span>
 
                 <div className="flex row gap-3 mt-6 wrap">
-                  <img decoding="async" loading="lazy"
+                  <img
+                    decoding="async"
+                    loading="lazy"
                     className="w-15"
                     src="/assets/images/buttons/google-play-download.png"
                     alt="لینک گوگل پلی"
                   />
 
-                  <img decoding="async" loading="lazy"
+                  <img
+                    decoding="async"
+                    loading="lazy"
                     className="w-15"
                     src="/assets/images/buttons/app-store-download.webp"
                     alt="لینک اپ استور"

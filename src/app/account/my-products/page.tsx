@@ -128,7 +128,9 @@ export default function Page() {
                   <div className="flex md-justify-content-between row full-width">
                     <div className="flex row align-items-center gap-3">
                       <div className="relative flex justify-content-center align-items-center max-w-17 md-max-w-13 round-md">
-                        <img decoding="async" loading="lazy"
+                        <img
+                          decoding="async"
+                          loading="lazy"
                           src="/assets/images/example/square-shoe-5.jpg"
                           alt=""
                           className="full-width object-cover round-md"
