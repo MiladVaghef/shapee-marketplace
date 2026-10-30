@@ -1,0 +1,66 @@
+[
+  {
+    "name": "headphones",
+    "sourceWidth": 1254,
+    "sourceHeight": 1254,
+    "image": "public/assets/images/products/studio-headphones.webp",
+    "bytes": 80136,
+    "thumbnailBytes": 13268
+  },
+  {
+    "name": "perfume",
+    "sourceWidth": 1254,
+    "sourceHeight": 1254,
+    "image": "public/assets/images/products/studio-perfume.webp",
+    "bytes": 67126,
+    "thumbnailBytes": 16676
+  },
+  {
+    "name": "controller",
+    "sourceWidth": 1254,
+    "sourceHeight": 1254,
+    "image": "public/assets/images/products/studio-controller.webp",
+    "bytes": 51220,
+    "thumbnailBytes": 12802
+  },
+  {
+    "name": "tshirt",
+    "sourceWidth": 1254,
+    "sourceHeight": 1254,
+    "image": "public/assets/images/products/studio-tshirt.webp",
+    "bytes": 32108,
+    "thumbnailBytes": 6798
+  },
+  {
+    "name": "vase",
+    "sourceWidth": 1254,
+    "sourceHeight": 1254,
+    "image": "public/assets/images/products/studio-vase.webp",
+    "bytes": 42840,
+    "thumbnailBytes": 3868
+  },
+  {
+    "name": "backpack",
+    "sourceWidth": 1254,
+    "sourceHeight": 1254,
+    "image": "public/assets/images/products/studio-backpack.webp",
+    "bytes": 149890,
+    "thumbnailBytes": 20988
+  },
+  {
+    "name": "lamp",
+    "sourceWidth": 1254,
+    "sourceHeight": 1254,
+    "image": "public/assets/images/products/studio-lamp.webp",
+    "bytes": 23850,
+    "thumbnailBytes": 5720
+  },
+  {
+    "name": "watch",
+    "sourceWidth": 1254,
+    "sourceHeight": 1254,
+    "image": "public/assets/images/products/studio-watch.webp",
+    "bytes": 93564,
+    "thumbnailBytes": 21800
+  }
+]

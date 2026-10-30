@@ -1,0 +1,70 @@
+{
+  "mode": "Built-in image_gen tool",
+  "reference": "public/assets/images/example/square-shoe-5.jpg",
+  "assets": [
+    {
+      "name": "headphones",
+      "source": "C:\\Users\\PC1\\.codex\\generated_images\\01a17f0a-8dd8-7163-a321-f971e7acd75c\\exec-f7dbaf33-60b5-4553-ae4d-c4bfbf79fdd2.png",
+      "original": "assets/generated-products/studio-headphones.png",
+      "image": "public/assets/images/products/studio-headphones.webp",
+      "thumbnail": "public/assets/images/products/studio-headphones-480.webp",
+      "prompt": "Use case: product-mockup. Create a single photorealistic premium ecommerce catalog photograph for a Persian marketplace. The supplied shoe image is ONLY a style reference for background, product scale, studio lighting and polish; do not show a shoe. Subject: One premium matte graphite over-ear wireless headphone, angled three-quarter view, soft padded earcups and refined metal headband.. Square 1024x1024 composition, entire object fully visible, visually centered and balanced, product occupies about 78% of the frame, comfortable 10-12% breathing room. Seamless uniform light neutral gray background around #e0e0e0, softly grounded contact shadow, gentle key light from upper left, realistic material details, crisp commercial photography. No lifestyle environment, no pedestal, no props, no hands, no border, no typography, no logos, no watermark. This must be one isolated product, never a collage or grid. Match a cohesive catalog series."
+    },
+    {
+      "name": "perfume",
+      "source": "C:\\Users\\PC1\\.codex\\generated_images\\01a17f0a-8dd8-7163-a321-f971e7acd75c\\exec-f24e0597-a656-4a97-9ec6-fdb60087b27d.png",
+      "original": "assets/generated-products/studio-perfume.png",
+      "image": "public/assets/images/products/studio-perfume.webp",
+      "thumbnail": "public/assets/images/products/studio-perfume-480.webp",
+      "prompt": "Use case: product-mockup. Create a single photorealistic premium ecommerce catalog photograph for a Persian marketplace. The supplied shoe image is ONLY a style reference for background, product scale, studio lighting and polish; do not show a shoe. Subject: One elegant amber glass perfume bottle with a matte black cap, subtle ribbed glass, no label or writing, three-quarter view.. Square 1024x1024 composition, entire object fully visible, visually centered and balanced, product occupies about 78% of the frame, comfortable 10-12% breathing room. Seamless uniform light neutral gray background around #e0e0e0, softly grounded contact shadow, gentle key light from upper left, realistic material details, crisp commercial photography. No lifestyle environment, no pedestal, no props, no hands, no border, no typography, no logos, no watermark. This must be one isolated product, never a collage or grid. Match a cohesive catalog series."
+    },
+    {
+      "name": "controller",
+      "source": "C:\\Users\\PC1\\.codex\\generated_images\\01a17f0a-8dd8-7163-a321-f971e7acd75c\\exec-7d633234-5bc5-43f0-87ae-dc4d9c499391.png",
+      "original": "assets/generated-products/studio-controller.png",
+      "image": "public/assets/images/products/studio-controller.webp",
+      "thumbnail": "public/assets/images/products/studio-controller-480.webp",
+      "prompt": "Use case: product-mockup. Create a single photorealistic premium ecommerce catalog photograph for a Persian marketplace. The supplied shoe image is ONLY a style reference for background, product scale, studio lighting and polish; do not show a shoe. Subject: One premium ivory and graphite wireless gaming controller, dual thumbsticks and understated unlabeled buttons, three-quarter view.. Square 1024x1024 composition, entire object fully visible, visually centered and balanced, product occupies about 78% of the frame, comfortable 10-12% breathing room. Seamless uniform light neutral gray background around #e0e0e0, softly grounded contact shadow, gentle key light from upper left, realistic material details, crisp commercial photography. No lifestyle environment, no pedestal, no props, no hands, no border, no typography, no logos, no watermark. This must be one isolated product, never a collage or grid. Match a cohesive catalog series."
+    },
+    {
+      "name": "tshirt",
+      "source": "C:\\Users\\PC1\\.codex\\generated_images\\01a17f0a-8dd8-7163-a321-f971e7acd75c\\exec-e7f99672-72e9-4d2b-81f3-7bca6edd50f4.png",
+      "original": "assets/generated-products/studio-tshirt.png",
+      "image": "public/assets/images/products/studio-tshirt.webp",
+      "thumbnail": "public/assets/images/products/studio-tshirt-480.webp",
+      "prompt": "Use case: product-mockup. Create a single photorealistic premium ecommerce catalog photograph for a Persian marketplace. The supplied shoe image is ONLY a style reference for background, product scale, studio lighting and polish; do not show a shoe. Subject: One neatly presented cream cotton crew-neck T-shirt, laid flat with natural sculptural folds, no print or logos, slightly elevated camera.. Square 1024x1024 composition, entire object fully visible, visually centered and balanced, product occupies about 78% of the frame, comfortable 10-12% breathing room. Seamless uniform light neutral gray background around #e0e0e0, softly grounded contact shadow, gentle key light from upper left, realistic material details, crisp commercial photography. No lifestyle environment, no pedestal, no props, no hands, no border, no typography, no logos, no watermark. This must be one isolated product, never a collage or grid. Match a cohesive catalog series."
+    },
+    {
+      "name": "vase",
+      "source": "C:\\Users\\PC1\\.codex\\generated_images\\01a17f0a-8dd8-7163-a321-f971e7acd75c\\exec-93db5576-c38a-4e88-94b3-5c9fcff1972c.png",
+      "original": "assets/generated-products/studio-vase.png",
+      "image": "public/assets/images/products/studio-vase.webp",
+      "thumbnail": "public/assets/images/products/studio-vase-480.webp",
+      "prompt": "Use case: product-mockup. Create a single photorealistic premium ecommerce catalog photograph for a Persian marketplace. The supplied shoe image is ONLY a style reference for background, product scale, studio lighting and polish; do not show a shoe. Subject: One sculptural warm ivory ceramic vase, softly rounded asymmetrical silhouette with an open neck, subtle matte texture, three-quarter view.. Square 1024x1024 composition, entire object fully visible, visually centered and balanced, product occupies about 78% of the frame, comfortable 10-12% breathing room. Seamless uniform light neutral gray background around #e0e0e0, softly grounded contact shadow, gentle key light from upper left, realistic material details, crisp commercial photography. No lifestyle environment, no pedestal, no props, no hands, no border, no typography, no logos, no watermark. This must be one isolated product, never a collage or grid. Match a cohesive catalog series."
+    },
+    {
+      "name": "backpack",
+      "source": "C:\\Users\\PC1\\.codex\\generated_images\\01a17f0a-8dd8-7163-a321-f971e7acd75c\\exec-0aa8d130-bd7d-4298-a29e-a343cf97691c.png",
+      "original": "assets/generated-products/studio-backpack.png",
+      "image": "public/assets/images/products/studio-backpack.webp",
+      "thumbnail": "public/assets/images/products/studio-backpack-480.webp",
+      "prompt": "Use case: product-mockup. Create a single photorealistic premium ecommerce catalog photograph for a Persian marketplace. The supplied shoe image is ONLY a style reference for background, product scale, studio lighting and polish; do not show a shoe. Subject: One premium forest-green canvas everyday backpack with tan leather accents, zippers and straps neatly arranged, three-quarter view.. Square 1024x1024 composition, entire object fully visible, visually centered and balanced, product occupies about 78% of the frame, comfortable 10-12% breathing room. Seamless uniform light neutral gray background around #e0e0e0, softly grounded contact shadow, gentle key light from upper left, realistic material details, crisp commercial photography. No lifestyle environment, no pedestal, no props, no hands, no border, no typography, no logos, no watermark. This must be one isolated product, never a collage or grid. Match a cohesive catalog series."
+    },
+    {
+      "name": "lamp",
+      "source": "C:\\Users\\PC1\\.codex\\generated_images\\01a17f0a-8dd8-7163-a321-f971e7acd75c\\exec-b4ca1054-0db2-4a26-b6b4-83096246b8e9.png",
+      "original": "assets/generated-products/studio-lamp.png",
+      "image": "public/assets/images/products/studio-lamp.webp",
+      "thumbnail": "public/assets/images/products/studio-lamp-480.webp",
+      "prompt": "Use case: product-mockup. Create a single photorealistic premium ecommerce catalog photograph for a Persian marketplace. The supplied shoe image is ONLY a style reference for background, product scale, studio lighting and polish; do not show a shoe. Subject: One refined compact matte black desk lamp with a simple dome shade and circular base, subtly angled stem, three-quarter view.. Square 1024x1024 composition, entire object fully visible, visually centered and balanced, product occupies about 78% of the frame, comfortable 10-12% breathing room. Seamless uniform light neutral gray background around #e0e0e0, softly grounded contact shadow, gentle key light from upper left, realistic material details, crisp commercial photography. No lifestyle environment, no pedestal, no props, no hands, no border, no typography, no logos, no watermark. This must be one isolated product, never a collage or grid. Match a cohesive catalog series."
+    },
+    {
+      "name": "watch",
+      "source": "C:\\Users\\PC1\\.codex\\generated_images\\01a17f0a-8dd8-7163-a321-f971e7acd75c\\exec-7c839cfc-cff9-4e1d-9f6a-250d921cad63.png",
+      "original": "assets/generated-products/studio-watch.png",
+      "image": "public/assets/images/products/studio-watch.webp",
+      "thumbnail": "public/assets/images/products/studio-watch-480.webp",
+      "prompt": "Use case: product-mockup. Create a single photorealistic premium ecommerce catalog photograph for a Persian marketplace. The supplied shoe image is ONLY a style reference for background, product scale, studio lighting and polish; do not show a shoe. Subject: One premium rectangular graphite smartwatch with a black woven strap, dark glass screen with no interface or text, neatly curved strap, three-quarter view.. Square 1024x1024 composition, entire object fully visible, visually centered and balanced, product occupies about 78% of the frame, comfortable 10-12% breathing room. Seamless uniform light neutral gray background around #e0e0e0, softly grounded contact shadow, gentle key light from upper left, realistic material details, crisp commercial photography. No lifestyle environment, no pedestal, no props, no hands, no border, no typography, no logos, no watermark. This must be one isolated product, never a collage or grid. Match a cohesive catalog series."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "tool": "Built-in image_gen",
+  "prompts": {
+    "fashion": "Use case: photorealistic-natural. Asset type: wide cover photo for a fashion boutique card on a polished Persian marketplace. Primary request: a refined modern womenswear boutique interior, neatly spaced cream beige and dusty rose jackets and shirts on an oak rail, folded knitwear on a pale stone table, a small leather bag. Editorial retail photography, realistic materials, warm soft daylight, clean composition, landscape 3:2. No people, no text, no logos, no watermark.",
+    "books": "Use case: photorealistic-natural. Asset type: wide cover photo for a book and stationery shop card on a polished marketplace. Primary request: curated stack of beautiful hardcover books, open notebook and fountain pen on a walnut desk, softly blurred bookshop shelves behind. Warm rust, forest green and cream book covers, readable paper texture, soft window light. Editorial still life photography, landscape 3:2, no people, no readable text, no logos, no watermark.",
+    "coffee": "Use case: product-mockup. Asset type: wide cover photo for a specialty coffee brand card on a polished marketplace. Primary request: a matte dark forest-green coffee bag with no lettering beside a handmade cream ceramic espresso cup and a few roasted beans on a warm pale stone counter, softly blurred cafe in the background. Premium realistic product photography, warm gentle daylight, clean composition, landscape 3:2. No people, no text, no logos, no watermark."
+  },
+  "outputs": [
+    "public/assets/images/home/fashion.webp",
+    "public/assets/images/home/books.webp",
+    "public/assets/images/home/coffee.webp"
+  ],
+  "originals": "assets/generated-home"
+}

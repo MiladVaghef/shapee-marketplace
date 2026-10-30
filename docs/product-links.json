@@ -1,0 +1,12 @@
+{
+  "products": 22,
+  "linkedCards": 67,
+  "files": {
+    "src/app/account/wish-list/page.tsx": 8,
+    "src/app/inner-category/products-category/page.tsx": 12,
+    "src/app/page.tsx": 17,
+    "src/app/profile/shops-profile/page.tsx": 12,
+    "src/app/profile/user-profile/page.tsx": 6,
+    "src/app/search-result/page.tsx": 12
+  }
+}
