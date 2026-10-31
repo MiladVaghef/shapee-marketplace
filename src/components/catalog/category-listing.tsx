@@ -8,7 +8,9 @@ import {
   getCatalogItems,
 } from "@/data/catalog";
 import { ListingCard } from "./listing-card";
+import { CatalogSelect } from "./catalog-select";
 import "./category-listing.scss";
+
 type Filters = {
   query: string;
   category: string;
@@ -26,6 +28,15 @@ const routes: Record<CatalogKind, string> = {
 };
 const normalize = (value: string) =>
   value.replace(/ي/g, "ی").replace(/ك/g, "ک").trim().toLocaleLowerCase();
+const countFilters = (value: Filters) =>
+  Object.values(value).filter((value) => value.trim()).length;
+type Panel = "sort" | "fitler" | "category";
+const panelTitles = {
+  sort: "مرتب‌سازی",
+  fitler: "فیلترهای جستجو",
+  category: "دسته‌بندی‌ها",
+};
+
 export function CategoryListing({
   kind,
   initialQuery = "",
@@ -39,23 +50,32 @@ export function CategoryListing({
   });
   const [filters, setFilters] = useState(draft);
   const [sort, setSort] = useState("default");
-  const [panel, setPanel] = useState<string | null>(null);
+  const [draftSort, setDraftSort] = useState(sort);
+  const [panel, setPanel] = useState<Panel | null>(null);
   const panelRef = useRef<HTMLDivElement>(null);
   useModalFocus(panelRef, Boolean(panel));
-
   const items = getCatalogItems(kind);
   const categories = [...new Set(items.map((i) => i.category))];
   const locations = [...new Set(items.map((i) => i.location))];
+  const hasPrice = items.some((i) => i.price > 0);
+  const matches = (i: (typeof items)[number], value: Filters) =>
+    normalize(
+      [
+        i.title,
+        i.category,
+        i.location,
+        i.job?.company,
+        i.job?.workplace,
+        ...(i.job?.skills ?? []),
+      ]
+        .filter(Boolean)
+        .join(" "),
+    ).includes(normalize(value.query)) &&
+    (!value.category || i.category === value.category) &&
+    (!value.location || i.location === value.location) &&
+    (!value.maximum || i.price <= Number(value.maximum));
   const results = items
-    .filter(
-      (i) =>
-        normalize(i.title + " " + i.category + " " + i.location).includes(
-          normalize(filters.query),
-        ) &&
-        (!filters.category || i.category === filters.category) &&
-        (!filters.location || i.location === filters.location) &&
-        (!filters.maximum || i.price <= Number(filters.maximum)),
-    )
+    .filter((i) => matches(i, filters))
     .sort((a, b) =>
       sort === "cheap"
         ? a.price - b.price
@@ -63,110 +83,159 @@ export function CategoryListing({
           ? b.price - a.price
           : 0,
     );
+  const previewCount = items.filter((i) => matches(i, draft)).length;
+  const activeCount = countFilters(filters);
   const reset = () => {
     setDraft(empty);
     setFilters(empty);
-    setSort("default");
   };
   const apply = () => {
-    setFilters(draft);
+    setFilters({ ...draft, query: draft.query.trim() });
     setPanel(null);
   };
+  const removeFilter = (key: keyof Filters) => {
+    const next = { ...filters, [key]: "" };
+    setFilters(next);
+    setDraft(next);
+  };
+  const openPanel = (key: Panel) => {
+    if (key === "fitler") setDraft(filters);
+    if (key === "sort") setDraftSort(sort);
+    setPanel(key);
+  };
+  const filterHeader = () => (
+    <div className="listing-filter-heading">
+      <h2>
+        <i className="icon icon-filter" aria-hidden="true" />
+        فیلترهای جستجو
+        {activeCount > 0 && (
+          <span className="listing-count">
+            {activeCount.toLocaleString("fa-IR")}
+          </span>
+        )}
+      </h2>
+      {(activeCount > 0 || countFilters(draft) > 0) && (
+        <button className="listing-reset" type="button" onClick={reset}>
+          حذف همه فیلترها
+        </button>
+      )}
+    </div>
+  );
   const fields = (prefix: string) => (
     <>
-      <label htmlFor={prefix + "-query"}>
-        جستجو
-        <input
-          id={prefix + "-query"}
-          type="search"
-          value={draft.query}
-          onChange={(e) => setDraft({ ...draft, query: e.target.value })}
-          placeholder="نام، دسته‌بندی یا شهر"
-        />
-      </label>
-      <label htmlFor={prefix + "-category"}>
-        دسته‌بندی
-        <select
-          id={prefix + "-category"}
-          value={draft.category}
-          onChange={(e) => setDraft({ ...draft, category: e.target.value })}
-        >
-          <option value="">همه دسته‌بندی‌ها</option>
-          {categories.map((c) => (
-            <option key={c}>{c}</option>
-          ))}
-        </select>
-      </label>
-      <label htmlFor={prefix + "-location"}>
-        موقعیت
-        <select
-          id={prefix + "-location"}
-          value={draft.location}
-          onChange={(e) => setDraft({ ...draft, location: e.target.value })}
-        >
-          <option value="">همه شهرها</option>
-          {locations.map((c) => (
-            <option key={c}>{c}</option>
-          ))}
-        </select>
-      </label>
-      {items.some((i) => i.price > 0) && (
-        <label htmlFor={prefix + "-price"}>
-          حداکثر قیمت (تومان)
-          <input
-            id={prefix + "-price"}
-            type="number"
-            min="0"
-            value={draft.maximum}
-            onChange={(e) => setDraft({ ...draft, maximum: e.target.value })}
-          />
+      <div className="listing-fields__body">
+        <label htmlFor={prefix + "-query"}>
+          جستجو
+          <span className="listing-search">
+            <i className="icon icon-search" aria-hidden="true" />
+            <input
+              id={prefix + "-query"}
+              type="search"
+              value={draft.query}
+              onChange={(e) => setDraft({ ...draft, query: e.target.value })}
+              placeholder={
+                kind === "jobs" ? "عنوان شغل یا مهارت" : "نام، دسته‌بندی یا شهر"
+              }
+            />
+          </span>
         </label>
-      )}
-      <button className="btn-primary full-width font-peyda" type="submit">
-        اعمال فیلترها
-      </button>
-      <button
-        className="btn-secondary full-width font-peyda"
-        type="button"
-        onClick={reset}
-      >
-        حذف همه فیلترها
-      </button>
+        <CatalogSelect
+          id={prefix + "-category"}
+          label="دسته‌بندی"
+          value={draft.category}
+          onChange={(category) => setDraft({ ...draft, category })}
+          options={[
+            { value: "", label: "همه دسته‌بندی‌ها" },
+            ...categories.map((value) => ({ value, label: value })),
+          ]}
+        />
+        <CatalogSelect
+          id={prefix + "-location"}
+          label="شهر"
+          value={draft.location}
+          onChange={(location) => setDraft({ ...draft, location })}
+          options={[
+            { value: "", label: "همه شهرها" },
+            ...locations.map((value) => ({ value, label: value })),
+          ]}
+        />
+        {hasPrice && (
+          <label htmlFor={prefix + "-price"}>
+            <span className="listing-field-label">
+              حداکثر قیمت <small>تومان</small>
+            </span>
+            <input
+              id={prefix + "-price"}
+              type="number"
+              inputMode="numeric"
+              min="0"
+              value={draft.maximum}
+              onChange={(e) => setDraft({ ...draft, maximum: e.target.value })}
+              placeholder="بدون محدودیت"
+            />
+          </label>
+        )}
+      </div>
+      <div className="listing-fields__footer">
+        <button
+          className="listing-apply"
+          type="submit"
+          aria-label="اعمال فیلترها"
+        >
+          <span>اعمال فیلترها</span>
+          <span className="listing-apply__count" aria-hidden="true">
+            <bdi>{previewCount.toLocaleString("fa-IR")}</bdi>
+            <span>نتیجه</span>
+          </span>
+        </button>
+        {prefix === "mobile" &&
+          (countFilters(draft) > 0 || activeCount > 0) && (
+            <button className="listing-reset" type="button" onClick={reset}>
+              حذف همه فیلترها
+            </button>
+          )}
+      </div>
     </>
   );
   const sorting = (prefix: string) => (
-    <label htmlFor={prefix + "-sort"}>
-      مرتب‌سازی
-      <select
-        id={prefix + "-sort"}
-        value={sort}
-        onChange={(e) => setSort(e.target.value)}
-      >
-        <option value="default">مرتبط‌ترین</option>
-        {items.some((i) => i.price > 0) && (
-          <>
-            <option value="cheap">ارزان‌ترین</option>
-            <option value="expensive">گران‌ترین</option>
-          </>
-        )}
-      </select>
-    </label>
+    <CatalogSelect
+      id={prefix + "-sort"}
+      label="مرتب‌سازی"
+      value={prefix === "mobile" ? draftSort : sort}
+      onChange={prefix === "mobile" ? setDraftSort : setSort}
+      options={[
+        { value: "default", label: "مرتبط‌ترین" },
+        ...(hasPrice
+          ? [
+              { value: "cheap", label: "ارزان‌ترین" },
+              { value: "expensive", label: "گران‌ترین" },
+            ]
+          : []),
+      ]}
+    />
   );
   const categoryLinks = () =>
     (Object.keys(routes) as CatalogKind[]).map((k) => (
       <Link
         key={k}
         href={"/inner-category/" + routes[k]}
-        className={
-          "flex justify-content-between p-4 text-sm " +
-          (kind === k ? "bg-primary-light text-primary" : "")
-        }
         aria-current={kind === k ? "page" : undefined}
       >
         {catalogTitles[k]}
-        <i className="icon icon-left-2" />
+        <i className="icon icon-left-2" aria-hidden="true" />
       </Link>
     ));
+  const chips = (Object.keys(filters) as (keyof Filters)[])
+    .filter((key) => filters[key])
+    .map((key) => ({
+      key,
+      label:
+        key === "maximum"
+          ? "تا " + Number(filters[key]).toLocaleString("fa-IR") + " تومان"
+          : key === "query"
+            ? "جستجو: " + filters[key]
+            : filters[key],
+    }));
   return (
     <main
       className="products-category-page main-container mt-10 flex column gap-5 lg-mb-20 inline-space font-peyda listing"
@@ -176,58 +245,109 @@ export function CategoryListing({
         <Link href="/">خانه</Link> / {catalogTitles[kind]}
       </nav>
       <h1 className="text-lg semi-bold m-0">{catalogTitles[kind]}</h1>
-      <div className="flex gap-5 lg-column">
-        <aside className="lg-full-width flex column gap-4 full-width max-w-35 lg-max-w-unset">
+      {kind === "jobs" && (
+        <p className="jobs-intro">
+          فرصت بعدی‌تان را بر اساس تخصص و شهر پیدا کنید.
+          <span>آگهی‌های نمونه</span>
+        </p>
+      )}
+      <div className="listing-layout">
+        <aside className="listing-sidebar" aria-label="فیلترها و دسته‌بندی‌ها">
           <form
-            className="form lg-remove listing-fields"
+            className="listing-filter-card listing-fields lg-remove"
             onSubmit={(e) => {
               e.preventDefault();
               apply();
             }}
           >
-            <h2 className="text-md bold m-0">فیلترهای جستجو</h2>
+            {filterHeader()}
             {fields("desktop")}
           </form>
-          <div className="form lg-remove">
-            <h2 className="text-md bold">دسته‌بندی‌ها</h2>
+          <nav
+            className="listing-categories lg-remove"
+            aria-label="دسته‌بندی‌های شاپی"
+          >
+            <h2>دسته‌بندی‌ها</h2>
             {categoryLinks()}
-          </div>
-          <div className="row gap-2 remove lg-flex">
-            {[
-              ["sort-sorting", "sort", "مرتب‌سازی"],
-              ["fitler-trigger", "fitler", "فیلتر‌"],
-              ["category-trigger", "category", "دسته بندی"],
-            ].map(([trigger, key, label]) => (
+          </nav>
+          <div className="listing-mobile-tools">
+            {(
+              [
+                ["fitler-trigger", "fitler", "فیلترها", "icon-filter"],
+                ["sort-sorting", "sort", "مرتب‌سازی", "icon-sort-amount-down"],
+                ["category-trigger", "category", "دسته‌بندی‌ها", "icon-grid"],
+              ] as const
+            ).map(([trigger, key, label, icon]) => (
               <button
                 key={key}
                 id={"products-mobile-" + trigger}
-                className="btn-secondary font-peyda fill"
                 type="button"
-                onClick={() => {
-                  setPanel(key);
-                }}
+                aria-expanded={panel === key}
+                aria-controls={"products-mobile-" + key + "-drawer"}
+                onClick={() => openPanel(key)}
               >
+                <i className={"icon " + icon} aria-hidden="true" />
                 {label}
+                {key === "fitler" && activeCount > 0 && (
+                  <span className="listing-count">
+                    {activeCount.toLocaleString("fa-IR")}
+                  </span>
+                )}
               </button>
             ))}
           </div>
         </aside>
-        <div className="full-width min-w-0">
-          <div className="flex justify-content-between align-items-center mb-5 gap-3">
-            <span role="status" className="text-sm text-muted">
-              {results.length.toLocaleString("fa-IR")} نتیجه
+        <div className="listing-results">
+          <div className="listing-toolbar">
+            <span
+              className="listing-result-count"
+              role="status"
+              aria-live="polite"
+              aria-atomic="true"
+            >
+              <strong>{results.length.toLocaleString("fa-IR")}</strong>
+              <span>نتیجه</span>
+              {activeCount > 0 && (
+                <small> از {items.length.toLocaleString("fa-IR")} مورد</small>
+              )}
             </span>
-            <div className="lg-remove listing-fields">{sorting("desktop")}</div>
+            <div className="lg-remove listing-sorting">
+              {sorting("desktop")}
+            </div>
           </div>
+          {activeCount > 0 && (
+            <div
+              className="listing-active"
+              role="group"
+              aria-label="فیلترهای فعال"
+            >
+              {chips.map(({ key, label }) => (
+                <button
+                  key={key}
+                  type="button"
+                  onClick={() => removeFilter(key)}
+                  aria-label={"حذف فیلتر " + label}
+                >
+                  {label}
+                  <span aria-hidden="true">×</span>
+                </button>
+              ))}
+              <button type="button" className="listing-reset" onClick={reset}>
+                حذف همه فیلترها
+              </button>
+            </div>
+          )}
           {results.length ? (
             <section
               aria-label="نتایج"
               className={
-                kind === "tours"
-                  ? "grid grid-col-3 xl-grid-col-2 md-grid-col-1 gap-4"
-                  : ["shops", "brands", "houses"].includes(kind)
-                    ? "grid grid-col-2 sm-grid-col-1 gap-4"
-                    : "grid grid-col-4 xl-grid-col-3 md-grid-col-1 gap-4"
+                kind === "jobs"
+                  ? "jobs-grid"
+                  : kind === "tours"
+                    ? "grid grid-col-3 xl-grid-col-2 md-grid-col-1 gap-4"
+                    : ["shops", "brands", "houses"].includes(kind)
+                      ? "grid grid-col-2 sm-grid-col-1 gap-4"
+                      : "grid grid-col-4 xl-grid-col-3 md-grid-col-1 gap-4"
               }
             >
               {results.map((item) => (
@@ -235,12 +355,11 @@ export function CategoryListing({
               ))}
             </section>
           ) : (
-            <div className="form flex column align-items-center gap-4">
-              <h2 className="text-md">نتیجه‌ای پیدا نشد</h2>
-              <p className="text-sm text-muted">
-                عبارت جستجو یا فیلترها را تغییر دهید.
-              </p>
-              <button className="btn-secondary" onClick={reset}>
+            <div className="listing-empty">
+              <i className="icon icon-search" aria-hidden="true" />
+              <h2>نتیجه‌ای پیدا نشد</h2>
+              <p>عبارت جستجو یا فیلترها را تغییر دهید.</p>
+              <button type="button" onClick={reset}>
                 حذف همه فیلترها
               </button>
             </div>
@@ -250,12 +369,13 @@ export function CategoryListing({
       <button
         id="products-mobile-overlay"
         aria-label="بستن فیلترها"
+        tabIndex={-1}
         className={
           "background-overlay listing-backdrop " + (!panel ? "hidden" : "")
         }
         onClick={() => setPanel(null)}
       />
-      {["sort", "fitler", "category"].map((key) => (
+      {(["sort", "fitler", "category"] as const).map((key) => (
         <div
           key={key}
           id={"products-mobile-" + key + "-drawer"}
@@ -263,15 +383,9 @@ export function CategoryListing({
           role="dialog"
           aria-modal="true"
           aria-hidden={panel !== key}
-          aria-label={
-            key === "sort"
-              ? "مرتب‌سازی"
-              : key === "category"
-                ? "دسته‌بندی‌ها"
-                : "فیلترهای جستجو"
-          }
+          aria-labelledby={"listing-" + key + "-title"}
           hidden={panel !== key}
-          className="listing-drawer form font-peyda"
+          className="listing-drawer font-peyda"
           onKeyDown={(e) => {
             if (e.key === "Escape") {
               e.stopPropagation();
@@ -280,30 +394,34 @@ export function CategoryListing({
             trapModalTab(e);
           }}
         >
-          <button
-            type="button"
-            className="overlay-close-button"
-            aria-label="بستن پنجره"
-            onClick={() => setPanel(null)}
-          >
-            <i className="icon icon-cross" />
-          </button>
-          <h2 className="text-md">
-            {key === "sort"
-              ? "مرتب‌سازی"
-              : key === "category"
-                ? "دسته‌بندی‌ها"
-                : "فیلترهای جستجو"}
-          </h2>
+          <div className="listing-drawer__header">
+            <h2 id={"listing-" + key + "-title"}>{panelTitles[key]}</h2>
+            <button
+              type="button"
+              aria-label="بستن پنجره"
+              onClick={() => setPanel(null)}
+            >
+              <i className="icon icon-cross" aria-hidden="true" />
+            </button>
+          </div>
           {key === "sort" ? (
             <div className="listing-fields">
-              {sorting("mobile")}
-              <button className="btn-primary" onClick={() => setPanel(null)}>
-                اعمال
-              </button>
+              <div className="listing-fields__body">{sorting("mobile")}</div>
+              <div className="listing-fields__footer">
+                <button
+                  type="button"
+                  className="listing-apply"
+                  onClick={() => {
+                    setSort(draftSort);
+                    setPanel(null);
+                  }}
+                >
+                  اعمال
+                </button>
+              </div>
             </div>
           ) : key === "category" ? (
-            <nav className="flex column gap-3">{categoryLinks()}</nav>
+            <nav className="listing-categories">{categoryLinks()}</nav>
           ) : (
             <form
               className="listing-fields"

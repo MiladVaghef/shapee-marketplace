@@ -7,10 +7,29 @@ import Link from "next/link";
 import { SearchInput } from "@/components/ui/search-input";
 
 import { PageFrame } from "@/components/layout/page-frame";
-export const metadata: Metadata = {
-  title: "شاپی | برنامه نویس Laravel مید لول",
-};
-export default function Page() {
+import { JobDetail } from "@/components/catalog/job-detail";
+import { jobAds } from "@/data/jobs";
+import { notFound } from "next/navigation";
+
+type JobPageProps = { searchParams: Promise<{ job?: string }> };
+export async function generateMetadata({
+  searchParams,
+}: JobPageProps): Promise<Metadata> {
+  const { job: id } = await searchParams;
+  const job = jobAds.find((job) => job.id === id);
+  return {
+    title: job
+      ? `${job.title} | ${job.company} | شاپی`
+      : "شاپی | برنامه نویس Laravel مید لول",
+  };
+}
+export default async function Page({ searchParams }: JobPageProps) {
+  const { job: id } = await searchParams;
+  if (id) {
+    const job = jobAds.find((job) => job.id === id);
+    if (!job) notFound();
+    return <JobDetail job={job} />;
+  }
   return (
     <>
       <PageFrame className="">

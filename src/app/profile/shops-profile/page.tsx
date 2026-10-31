@@ -9,6 +9,7 @@ import Link from "next/link";
 import { SearchInput } from "@/components/ui/search-input";
 
 import { PageFrame } from "@/components/layout/page-frame";
+import "./shops-profile.scss";
 export const metadata: Metadata = { title: "شاپی | پروفایل فروشگاه" };
 export default async function Page({
   searchParams,
@@ -269,14 +270,8 @@ export default async function Page({
         <main className="main-container mt-10 flex column gap-10 lg-mb-35 lg-mt-20 md-mb-24 md-mt-12 font-peyda">
           <div className="inline-space pt-8">
             <section className="form overflow-hidden p-0">
-              <div className="relative h-p10">
-                <img
-                  decoding="async"
-                  loading="lazy"
-                  src={store.cover}
-                  alt=""
-                  className="full-width full-height"
-                />
+              <div className="shop-profile-banner">
+                <img decoding="async" loading="lazy" src={store.cover} alt="" />
               </div>
 
               <div className="flex md-column gap-5 p-6 relative">
@@ -721,7 +716,7 @@ export default async function Page({
                         <img
                           decoding="async"
                           loading="lazy"
-                          src="/assets/images/example/toy.avif"
+                          src="/assets/images/products/studio-toy.webp"
                           alt="اسباب‌بازی عروسکی"
                           className="block full-width scale-up"
                         />
@@ -1133,7 +1128,7 @@ export default async function Page({
                         <img
                           decoding="async"
                           loading="lazy"
-                          src="/assets/images/example/toy.avif"
+                          src="/assets/images/products/studio-toy.webp"
                           alt="اسباب‌بازی عروسکی"
                           className="block full-width scale-up"
                         />

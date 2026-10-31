@@ -14,6 +14,14 @@ export function Sliders() {
       destroy: (deleteInstance?: boolean, cleanStyles?: boolean) => void;
     }[] = [];
     const cleanups: (() => void)[] = [];
+    const sliders = Array.from(
+      document.querySelectorAll<HTMLElement>(".swiper"),
+    );
+    const reportState = (state: "pending" | "ready" | "error") => {
+      sliders.forEach((element) => (element.dataset.siteSliderState = state));
+      window.dispatchEvent(new Event("shapee:sliders-state"));
+    };
+    reportState("pending");
     document
       .querySelectorAll<HTMLElement>(".avatar-swiper")
       .forEach((element) => cleanups.push(createRingMotion(element)));
@@ -140,12 +148,15 @@ export function Sliders() {
             }),
           );
         });
+        reportState("ready");
       })
       .catch(() => {
         // Keep the CSS scroll fallback usable if the slider code cannot load.
+        if (!disposed) reportState("error");
       });
     return () => {
       disposed = true;
+      sliders.forEach((element) => delete element.dataset.siteSliderState);
       cleanups.forEach((cleanup) => cleanup());
       instances.forEach((instance) => instance.destroy(true, true));
     };

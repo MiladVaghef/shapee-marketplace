@@ -60,7 +60,7 @@ export const products: Product[] = [
     slug: "toy-f3aee1e",
     title: "اسباب‌بازی عروسکی",
     price: "12,000,000",
-    image: "/assets/images/example/toy.avif",
+    image: "/assets/images/products/studio-toy.webp",
     category: "کودک و سرگرمی",
     location: "تهران",
     seller: "علی محمدی",

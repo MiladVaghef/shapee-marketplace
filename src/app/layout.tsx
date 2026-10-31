@@ -14,6 +14,8 @@ import "@/components/products/products.scss";
 import "@/components/account/profile-hub.scss";
 import { MobileBottomNav } from "@/components/layout/mobile-bottom-nav";
 import { SiteInteractions } from "@/components/layout/site-interactions";
+import { SiteLoader } from "@/components/layout/site-loader";
+import "@/components/layout/loading-screen.scss";
 
 const criticalSwiperFallback = `
 .swiper:not(.swiper-initialized):not(.avatar-swiper[data-ring-ready="true"]) {
@@ -162,6 +164,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="fa" dir="rtl" suppressHydrationWarning>
       <body suppressHydrationWarning>
         <style>{criticalSwiperFallback}</style>
+        <SiteLoader />
         <Link href="#page-content" className="skip-link">
           رفتن به محتوا
         </Link>

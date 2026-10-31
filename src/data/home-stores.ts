@@ -22,7 +22,7 @@ export const topShops: FeaturedStore[] = [
     category: "کفش و کتانی",
     city: "تهران",
     rating: "۴٫۸",
-    cover: example + "shoes-background.jpg",
+    cover: home + "shops/max-shoes-cover.webp",
     logo: "/assets/images/example/shoe-logo.avif",
     badge: "پرفروش",
     count: "۹۳",

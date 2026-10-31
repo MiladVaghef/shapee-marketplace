@@ -622,7 +622,7 @@ export default function Page() {
                       <img
                         decoding="async"
                         loading="lazy"
-                        src="/assets/images/example/toy.avif"
+                        src="/assets/images/products/studio-toy.webp"
                         alt="اسباب‌بازی عروسکی"
                         className="block full-width scale-up"
                       />

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ProductCard } from "@/components/products/product-card";
 import { TourCard } from "@/components/tours/tour-card";
+import { JobCard } from "./job-card";
 import { featuredProducts } from "@/data/products";
 import { tours } from "@/data/tours";
 import type { CatalogItem, CatalogKind } from "@/data/catalog";
@@ -11,6 +12,7 @@ export function ListingCard({
   item: CatalogItem;
   kind: CatalogKind;
 }) {
+  if (kind === "jobs" && item.job) return <JobCard job={item.job} />;
   if (kind === "products") {
     const product = featuredProducts.find((p) => p.slug === item.id);
     return product ? <ProductCard product={product} /> : null;

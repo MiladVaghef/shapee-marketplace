@@ -1,4 +1,5 @@
 import { featuredProducts } from "./products";
+import { jobAds, jobHref, type JobAd } from "./jobs";
 import { tours } from "./tours";
 import { properties } from "./properties";
 import { topShops, topBrands } from "./home-stores";
@@ -15,6 +16,7 @@ export type CatalogItem = {
   href: string;
   logo?: string;
   rating?: string;
+  job?: JobAd;
 };
 export const catalogTitles: Record<CatalogKind, string> = {
   products: "محصولات",
@@ -65,17 +67,16 @@ export function getCatalogItems(kind: CatalogKind): CatalogItem[] {
       href: `/properties/${p.slug}`,
     }));
   if (kind === "jobs")
-    return [
-      {
-        id: "network",
-        title: "استخدام متخصص شبکه IT",
-        category: "فناوری اطلاعات",
-        location: "تهران",
-        price: 0,
-        image: "/assets/logo/abr-arvan.jpeg",
-        href: "/inner-ads/inner-hire-ad",
-      },
-    ];
+    return jobAds.map((job) => ({
+      id: job.id,
+      title: job.title,
+      category: job.category,
+      location: job.location,
+      price: 0,
+      image: "",
+      href: jobHref(job.id),
+      job,
+    }));
   return (kind === "brands" ? topBrands : topShops).map((s) => ({
     id: s.id,
     title: s.name,
