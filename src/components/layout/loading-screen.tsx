@@ -1,25 +1,18 @@
 import Image from "next/image";
-import type { ReactNode } from "react";
 
 /** Shared loading screen using the same brand mark as the site header. */
 export function LoadingScreen({
-  slow = false,
   offline = false,
   failed = false,
-  children,
 }: {
-  slow?: boolean;
   offline?: boolean;
   failed?: boolean;
-  children?: ReactNode;
 }) {
   return (
     <div
       className="loading-screen"
       dir="rtl"
-      data-state={
-        offline ? "offline" : failed ? "failed" : slow ? "slow" : "loading"
-      }
+      data-state={offline ? "offline" : failed ? "failed" : "loading"}
     >
       <div className="loading-screen__content">
         <div className="loading-screen__mark">
@@ -41,25 +34,20 @@ export function LoadingScreen({
               ? "اتصال اینترنت برقرار نیست"
               : failed
                 ? "بارگذاری کامل نشد"
-                : slow
-                  ? "بارگذاری کمی طول کشیده"
-                  : "در حال آماده‌سازی شاپی"}
+                : "در حال آماده‌سازی شاپی"}
           </h2>
           <p
             className="loading-screen__description"
             id="site-loader-description"
-            hidden={!slow && !offline && !failed}
+            hidden={!offline && !failed}
           >
             {offline
-              ? "اتصال خود را بررسی کنید و دوباره تلاش کنید."
+              ? "در انتظار برقراری اتصال اینترنت…"
               : failed
-                ? "دوباره تلاش کنید یا با امکانات محدود وارد سایت شوید."
-                : slow
-                  ? "می‌توانید منتظر بمانید یا صفحه را دوباره بارگذاری کنید."
-                  : "چند لحظه تا دیدن تازه‌ترین‌ها فاصله دارید."}
+                ? "برخی از فایل‌های سایت بارگذاری نشده‌اند."
+                : "چند لحظه تا دیدن تازه‌ترین‌ها فاصله دارید."}
           </p>
         </div>
-        {children}
       </div>
     </div>
   );

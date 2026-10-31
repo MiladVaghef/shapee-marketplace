@@ -27,9 +27,7 @@ test("waits for initial assets and dismisses when the document is ready", async 
     await expect(loader.getByRole("status")).toContainText(
       "در حال آماده‌سازی شاپی",
     );
-    await expect(
-      loader.getByRole("button", { name: "ادامه به سایت" }),
-    ).toBeHidden();
+    await expect(loader.getByRole("button")).toHaveCount(0);
     await expect(loader.locator(".loading-screen__description")).toBeHidden();
     expect(await page.evaluate(() => document.readyState)).not.toBe("complete");
     await expect
@@ -49,7 +47,7 @@ test("waits for initial assets and dismisses when the document is ready", async 
   }
 });
 
-test("offers recovery without automatically revealing an unfinished page", async ({
+test("keeps the minimal loader after delays until the page is ready", async ({
   page,
 }) => {
   const release = await holdLogo(page);
@@ -57,24 +55,23 @@ test("offers recovery without automatically revealing an unfinished page", async
     await page.goto("/", { waitUntil: "domcontentloaded" });
     const loader = page.getByRole("dialog");
     await expect(loader).toBeVisible();
-    await expect(loader.getByRole("status")).toContainText(
-      "بارگذاری کمی طول کشیده",
-    );
-    await expect(
-      loader.getByRole("button", { name: "تلاش دوباره" }),
-    ).toBeVisible();
     await page.clock.install();
     await page.clock.fastForward(12000);
     await expect(loader).toBeVisible();
+    await expect(loader.getByRole("heading")).toHaveText(
+      "در حال آماده‌سازی شاپی",
+    );
+    await expect(loader.getByRole("button")).toHaveCount(0);
+    await expect(loader.locator(".loading-screen__description")).toBeHidden();
     expect(await page.evaluate(() => document.readyState)).not.toBe("complete");
-    await loader.getByRole("button", { name: "ادامه به سایت" }).click();
+    release();
     await expect(loader).not.toBeVisible();
   } finally {
     release();
   }
 });
 
-test("lets keyboard users dismiss and respects reduced motion on mobile", async ({
+test("prevents keyboard dismissal and respects reduced motion on mobile", async ({
   page,
 }) => {
   await page.setViewportSize({ width: 390, height: 844 });
@@ -98,6 +95,9 @@ test("lets keyboard users dismiss and respects reduced motion on mobile", async 
       path: test.info().outputPath("loading-mobile.png"),
     });
     await page.keyboard.press("Escape");
+    await expect(loader).toBeVisible();
+    await expect(loader.getByRole("button")).toHaveCount(0);
+    release();
     await expect(loader).not.toBeVisible();
     expect(
       await page.evaluate(() =>
@@ -125,9 +125,9 @@ test("shows the loading screen before the application JavaScript arrives", async
     expect(await loader.evaluate((element) => element.matches(":modal"))).toBe(
       false,
     );
-    // This escape hatch is native HTML, so it works even if hydration fails.
-    await loader.getByRole("button", { name: "ادامه به سایت" }).click();
-    await expect(loader).not.toBeVisible();
+    await expect(loader.getByRole("button")).toHaveCount(0);
+    await page.keyboard.press("Escape");
+    await expect(loader).toBeVisible();
     release();
     await page.waitForLoadState("load");
     await expect(loader).not.toBeVisible();
@@ -213,27 +213,30 @@ test("waits for the dynamically imported Swiper code to initialize", async ({
   }
 });
 
-test("a failed font offers recovery instead of claiming the site is ready", async ({
+test("a failed font keeps the loader visible without bypass controls", async ({
   page,
 }) => {
   await page.route("**/assets/font/*.ttf", (route) => route.abort());
   await page.goto("/");
   const loader = page.getByRole("dialog");
   await expect(loader.getByRole("status")).toContainText("بارگذاری کامل نشد");
-  await expect(
-    loader.getByRole("button", { name: "تلاش دوباره" }),
-  ).toBeVisible();
-  await loader.getByRole("button", { name: "ادامه به سایت" }).click();
-  await expect(loader).not.toBeVisible();
+  await expect(loader.getByRole("button")).toHaveCount(0);
+  await page.keyboard.press("Escape");
+  await expect(loader).toBeVisible();
 });
 
-test("allows continuing while assets are still pending", async ({ page }) => {
+test("clicks cannot bypass the loader while assets are pending", async ({
+  page,
+}) => {
   const release = await holdLogo(page);
   try {
     await page.goto("/", { waitUntil: "domcontentloaded" });
     const loader = page.getByRole("dialog");
     await expect(loader).toBeVisible();
-    await loader.getByRole("button", { name: "ادامه به سایت" }).click();
+    await loader.click({ position: { x: 8, y: 8 } });
+    await expect(loader).toBeVisible();
+    await expect(loader.getByRole("button")).toHaveCount(0);
+    release();
     await expect(loader).not.toBeVisible();
   } finally {
     release();
@@ -253,9 +256,7 @@ test("updates its connection message when the browser goes offline", async ({
     await expect(loader.getByRole("status")).toContainText(
       "اتصال اینترنت برقرار نیست",
     );
-    await expect(
-      loader.getByRole("button", { name: "تلاش دوباره" }),
-    ).toBeVisible();
+    await expect(loader.getByRole("button")).toHaveCount(0);
     await context.setOffline(false);
     await expect(loader.getByRole("status")).not.toContainText(
       "اتصال اینترنت برقرار نیست",

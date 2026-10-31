@@ -5,7 +5,6 @@ import { LoadingScreen } from "./loading-screen";
 
 export function SiteLoader() {
   const dialogRef = useRef<HTMLDialogElement>(null);
-  const [slow, setSlow] = useState(false);
   const [offline, setOffline] = useState(false);
   const [failed, setFailed] = useState(false);
 
@@ -18,11 +17,9 @@ export function SiteLoader() {
     let fontsReady = false;
     let paintFrame = 0;
     let dismissTimer = 0;
-    const slowTimer = window.setTimeout(() => setSlow(true), 4000);
     const dismiss = () => {
       if (finished) return;
       finished = true;
-      window.clearTimeout(slowTimer);
       window.cancelAnimationFrame(paintFrame);
       if (!dialog.open) return;
 
@@ -60,7 +57,6 @@ export function SiteLoader() {
     // The server renders an open dialog. Upgrade it to a modal after hydration,
     // without firing a close event (including during React Strict Mode replay).
     if (!dialog.open) {
-      window.clearTimeout(slowTimer);
       return;
     }
     if (!dialog.matches(":modal")) {
@@ -72,9 +68,7 @@ export function SiteLoader() {
     window.addEventListener("load", onLoad);
     window.addEventListener("online", onConnectionChange);
     window.addEventListener("offline", onConnectionChange);
-    window.addEventListener("pagehide", dismiss);
     window.addEventListener("shapee:sliders-state", checkReady);
-    dialog.addEventListener("close", dismiss);
     // FontFaceSet.status may be "loaded" before a font is requested. Explicitly
     // request both CSS families instead of treating that early snapshot as ready.
     void Promise.all([
@@ -99,18 +93,15 @@ export function SiteLoader() {
       window.removeEventListener("load", onLoad);
       window.removeEventListener("online", onConnectionChange);
       window.removeEventListener("offline", onConnectionChange);
-      window.removeEventListener("pagehide", dismiss);
       window.removeEventListener("shapee:sliders-state", checkReady);
-      dialog.removeEventListener("close", dismiss);
       finished = true;
-      window.clearTimeout(slowTimer);
       window.clearTimeout(dismissTimer);
       window.cancelAnimationFrame(paintFrame);
     };
   }, []);
 
-  // Visible before any client bundle runs. The native form remains a working
-  // escape hatch even if hydration fails; noscript exposes the page without JS.
+  // Visible before any client bundle runs; only readiness dismisses the loader.
+  // Without JavaScript, expose the server-rendered page directly.
   return (
     <>
       <noscript>
@@ -124,22 +115,9 @@ export function SiteLoader() {
         className="site-loader"
         aria-label="در حال آماده‌سازی شاپی"
         aria-describedby="site-loader-description"
+        onCancel={(event) => event.preventDefault()}
       >
-        <LoadingScreen slow={slow} offline={offline} failed={failed}>
-          <div className="loading-screen__actions">
-            {(slow || offline || failed) && (
-              <button type="button" onClick={() => window.location.reload()}>
-                تلاش دوباره
-              </button>
-            )}
-            <form method="dialog">
-              <button type="submit" className="loading-screen__continue">
-                ادامه به سایت
-                <span aria-hidden="true">←</span>
-              </button>
-            </form>
-          </div>
-        </LoadingScreen>
+        <LoadingScreen offline={offline} failed={failed} />
       </dialog>
     </>
   );
